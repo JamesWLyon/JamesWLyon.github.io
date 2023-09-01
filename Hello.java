@@ -1,30 +1,36 @@
 /**
+
  * Hello this is my Week 2 2B assignment
+
  */
 
+ 
+
 public class Hello {
+
     public static void main(String[] args) {
 
-        // These are the project variables that store data {
-            
+        // These are the project variables that store data {            
+
             // This one holds the name that is printed in the console
-            var name = "James"; 
+            String name = "James"; 
+
             // This one contains the age that is as well printed in the console
-            var age = 16;
+            byte age = 16;
+
             // This is the names of my parents (the top two), as well as my siblings
                 // Father
-                var father = "Kurt";
+                String father = "Kurt";
                 // Mother
-                var mother = "Kristin";
+                String mother = "Kristin";
                 // Oldest sister
-                var sister1 = "Madison";
+                String sister1 = "Madison";
                 // Middle sister
-                var sister2 = "Chloe";
+                String sister2 = "Chloe";
                 // Brother
-                var brother = "Grant";
+                String brother = "Grant";
                 // Youngest sister
-                var sister3 = "Evelyn";
-
+                String sister3 = "Evelyn";
         //}
 
         // This is the println command, which prints a message in the console
