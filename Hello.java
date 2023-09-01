@@ -5,7 +5,7 @@
 public class Hello {
     public static void main(String[] args) {
 
-        // These are the project varibles that store data {
+        // These are the project variables that store data {
             
             // This one holds the name that is printed in the console
             var name = "James"; 
@@ -27,7 +27,7 @@ public class Hello {
 
         //}
 
-        // This is the println command, this prints a message in the console
+        // This is the println command, which prints a message in the console
         System.out.println( "\nHello world!\nMy name is " + name + " and I am " + age + " years old.\n\nI also have my two parents...\n" + "My father " + father + ",\nand my mother " + mother + ".\n\nI also have four siblings...\nMy sister " + sister1 + ",\nmy sister " + sister2 + ",\nmy brother " + brother + ",\nand my sister " + sister3);
     }
 }
