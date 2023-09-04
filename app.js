@@ -22,11 +22,13 @@ function NavBtnMobil (w, i , item) {
         document.getElementById("nav-mobil-btn").style.marginLeft = w + "px";
         document.getElementById("nav-mobil-btn").style.backgroundColor = "rgb(0, 0, 0, 0)";
         document.getElementById("nav-menu").style.left = "0";
+        document.getElementById("nav-menu-icons").style.left = "0";
     } else {
         navBtn = 0;
         document.getElementById("nav-mobil-btn").style.marginLeft = "2.5vw";
         document.getElementById("nav-mobil-btn").style.backgroundColor = "rgb(0, 0, 0, 0.5)";
         document.getElementById("nav-menu").style.left = "-100vw";
+        document.getElementById("nav-menu-icons").style.left = "-80%";
     }
     
     // This also adds a class to the wrapper div in the nav menu button
