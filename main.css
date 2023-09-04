@@ -10,7 +10,6 @@ body {
     cursor: default;
     user-select: none;
     -webkit-user-select: none;
-    -webkit-user-drag: none;
     background-image: linear-gradient(to bottom right, rgb(36, 42, 59), rgb(8, 38, 42));
 }
 
@@ -71,11 +70,66 @@ body {
 #nav-menu {
     z-index: 90000;
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
     width: 100vw;
     height: 100vh;
     left: -100vw;
+    padding-top: 18vw;
+    font-size: 6vw;
     background-color: black;
     transition: .3s;
+}
+
+#nav-menu a {
+    display: inline-block;
+    -webkit-user-drag: none;
+    text-decoration: none;
+    color: #EEE;
+    text-transform: uppercase;
+}
+
+#nav-menu a::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+#nav-menu a:hover::after {width: 100%;}
+
+#nav-menu li {
+    margin: 5vw;
+}
+
+#nav-menu li:hover {cursor: pointer;}
+
+#nav-menu .drop-menu-btn {
+    position: relative;
+    left: -4.45vw;
+}
+
+#nav-menu-icons {
+    z-index: 95000;
+    display: flex;
+    position: fixed;
+    left: -80%;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    transition: .3s;
+}
+
+#nav-menu-icons img {height: 10vw;}
+
+.nav-icon {
+    width: 20%;
+    margin-top: 6vw;
 }
 
 @media screen and (min-width: 767px) {
