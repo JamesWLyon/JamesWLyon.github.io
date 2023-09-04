@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8">
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/6L8fNzB.png">
+
         <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-        
-        <title>jameswlyon</title>
+
+        <title>Nav Bar Style #1</title>
     </head>
     <body>
         <div id="nav-mobil-btn" onclick="NavBtnMobil();">
@@ -15,9 +18,20 @@
                 <div class="line three"></div>
             </div>
         </div>
-        
+
+        <div id="nav-menu-icons">
+            <a class="nav-icon" href="#" target="_blank"><img src="https://i.imgur.com/qMTiUJ9.png" title="My Tech Trep Portfolio"></a>
+            <a class="nav-icon" href="mailto:james.lyon@malad.us" target="_blank"><img src="https://i.imgur.com/qYkv5Mo.png" title="Send me an email"></a>
+            <a class="nav-icon" href="https://github.com/JamesWLyon" target="_blank"><img src="https://i.imgur.com/vfQEeWc.png" title="My GitHub Account"></a>
+        </div>
+
         <div id="nav-menu">
-            
+            <ul>
+                <li onclick="ChangePage();"><a href="#">home</a></li>
+                <li onclick="ChangePage();"><a href="#">about me</a></li>
+                <li class="drop-menu-btn" onclick="ChangePage();"><img class="drop-menu-img" src="https://i.imgur.com/PJXmIa0.png" style="height: 4.4vw;"><a href="#">2023/24 - 10th grade</a></li>
+                <li onclick="ChangePage();"><a href="#">resources</a></li>
+            </ul>
         </div>
 
         <script src="app.js"></script>
