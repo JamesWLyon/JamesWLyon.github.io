@@ -10,12 +10,13 @@
 
         <!-- Imported fonts -->
         <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
 
-        <title>JamesWLyon</title>
+        <title>Nav Bar Style #1</title>
     </head>
-    <body onload="WebsiteLoad();" onresize="WebsiteLoad();">
+    <body onload="WebsiteLoad(); GetProYears();" onresize="WebsiteLoad();">
 
-        <div id="nav-mobil-btn" onclick="NavBtnMobil();">
+        <div id="nav-mobil-btn" onclick="NavBtnMobil(0);">
             <div class="wrapper">
                 <div class="line one"></div>
                 <div class="line two"></div>
@@ -31,8 +32,8 @@
 
         <div id="nav-menu">
             <ul class="nav-wrap">
-                <li onclick="ChangePage();"><a href="#">home</a></li>
-                <li onclick="ChangePage();"><a href="#">about me</a></li>
+                <li onclick="ChangePage(0);"><a href="#">home</a></li>
+                <li onclick="ChangePage(1);"><a href="#">about me</a></li>
                 <li class="drop-menu-btn" onclick="NavDrop(0);"><img class="drop-menu-img" src="https://i.imgur.com/PJXmIa0.png" style="height: 4vw;"><a href="#">2023/24 - 10th grade</a>
                 <ul class="drop-menu">
                     <li onclick="ChangePage();"><a href="#">Week 2</a></li>
@@ -47,6 +48,17 @@
         <!-- Home Page-->
         <div class="page">
             <h1 class="page-title">My Progamming Journey</h1>
+            <p class="page-text">
+                Hello, my name is James Lyon! I have been programming since 2018, aka for <span id="programming-years"></span> years. I started off making websites in Wix, but wanted to learn how to make the websites myself. I then started learning web development towards the middle of 2018 on Khan Academy. I then went through and completed the...
+            </p>
+            <div class="continue-btn"><input type="button" value="Continue"></div>
+        </div>
+
+        <div class="page">
+            <h1 class="page-title">Hello</h1>
+            <p class="page-text">
+                
+            </p>
         </div>
 
         <script src="app.js"></script>
