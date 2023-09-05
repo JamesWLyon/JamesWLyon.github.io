@@ -18,7 +18,7 @@ function WebsiteLoad (w) {
 // This makes the nav menu button on a phone move from side to side when clicked {
 // This is for phones
 
-function NavBtnMobil (clik, w, i , item) {
+function NavBtnMobil (w, i , item) {
 
     // This gets the nav menu button from the html file
     item = document.getElementById("nav-mobil-btn");
@@ -43,9 +43,7 @@ function NavBtnMobil (clik, w, i , item) {
     }
     
     // This also adds a class to the wrapper div in the nav menu button
-    if (clik == 0) {
-        document.getElementsByClassName("wrapper")[0].classList.toggle("toggle");
-    }
+    document.getElementsByClassName("wrapper")[0].classList.toggle("toggle");
 }
 
 //}
@@ -77,10 +75,6 @@ function NavDrop (i, itm) {
 // Changes the website pages {
     
 function ChangePage (index) {
-
-    // Closes the nav menu
-    navBtn = 1;
-    NavBtnMobil();
 
     // Resets any drop menus
     dropArrow = 1;
