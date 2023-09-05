@@ -1,99 +1,179 @@
-// Varibles {
-    
-    var navBtn = 0, dropArrow = 0, navDropNum = 0;
-    var navDrop = document.getElementsByClassName("drop-menu-img");
-    var dropMenu = document.getElementsByClassName("drop-menu");
-
-//}
-
-// Runs when website is loaded and resized {
-
-function WebsiteLoad (w) {
-    w = window.innerHeight - ((window.innerWidth / 100) * 18);
-    document.getElementsByClassName("nav-wrap")[0].style.height = w + "px";
+* {
+    margin: 0;
+    padding: 0;
 }
 
-//}
-
-// This makes the nav menu button on a phone move from side to side when clicked {
-// This is for phones
-
-function NavBtnMobil (w, i , item) {
-
-    // This gets the nav menu button from the html file
-    item = document.getElementById("nav-mobil-btn");
-    // This gets the width of the nav menu button
-    i = item.getBoundingClientRect();
-    // With a little math this calculates where to perfectly position the nav menu button when you click it no matter the size of your phone
-    w = (window.innerWidth - i.width) - ((window.innerWidth/100) * 2.5);
-
-    // This is an if/else statement that changes the style of the nav menu button, as well as show and hide the actual menu 
-    if (navBtn == 0) {
-        navBtn = 1;
-        document.getElementById("nav-mobil-btn").style.marginLeft = w + "px";
-        document.getElementById("nav-mobil-btn").style.backgroundColor = "rgb(0, 0, 0, 0)";
-        document.getElementById("nav-menu").style.left = "0";
-        document.getElementById("nav-menu-icons").style.left = "0";
-    } else {
-        navBtn = 0;
-        document.getElementById("nav-mobil-btn").style.marginLeft = "2.5vw";
-        document.getElementById("nav-mobil-btn").style.backgroundColor = "rgb(0, 0, 0, 0.5)";
-        document.getElementById("nav-menu").style.left = "-100vw";
-        document.getElementById("nav-menu-icons").style.left = "-100vw";
-    }
-    
-    // This also adds a class to the wrapper div in the nav menu button
-    document.getElementsByClassName("wrapper")[0].classList.toggle("toggle");
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+    background-image: linear-gradient(to bottom right, rgb(53, 64, 90), rgb(4, 33, 37));
 }
 
-//}
-
-// This makes the drop menus in the nav menu work {
-
-function NavDrop (i, itm) {
-
-    // Sets the navDropNum variable to whatever the correct arrow number is
-    navDropNum = i;
-    // This sets the varible item to the class of that specific arrow
-    let item = navDrop[i];
-    // This gets the actual drop menu part
-    itm = dropMenu[i];
-    
-    if (dropArrow == 0) {
-        dropArrow = 1;
-        item.style.transform = "rotate(90deg)";
-        itm.style.height = "100%";
-    } else {
-        dropArrow = 0;
-        item.style.transform = "rotate(-0deg)";
-        itm.style.height = "0";
-    }
+#nav-mobil-btn {
+    z-index: 100000;
+    display: block;
+    position: fixed;
+    width: 15vw;
+    min-width: 170px;
+    max-width: 200px;
+    height: 15vw;
+    min-height: 170px;
+    max-height: 200px;
+    margin: 2.5vw;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: .3s;
 }
 
-//}
-
-// Changes the website pages {
-    
-function ChangePage (i) {
-
-    // Closes the nav menu
-    navBtn = 1;
-    NavBtnMobil();
-
-    // Resets any drop menus
-    dropArrow = 1;
-    NavDrop(navDropNum);
-
-    // Changes the website page
-    var page = document.getElementsByClassName('page');
-    function changePage(index) {
-        for (var i = 0; i < page.length; i++) {
-            page[i].style.display = 'none';
-        }
-        page[index].style.display = 'block';
-        window.scroll(0, 0);
-    }
-    ChangePage(0);
+#nav-mobil-btn:hover {
+    cursor: pointer;
 }
 
-//}
+#nav-mobil-btn .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: 6%;
+    background-color: #EEE;
+    transition: .3s;
+}
+
+.toggle .one {
+    transform: translateY(2.9vw) rotate(45deg);
+}
+
+.toggle .two {
+    width: 0;
+    opacity: 0;
+}
+
+.toggle .three {
+    transform: translateY(-2.9vw) rotate(-45deg);
+}
+
+#nav-menu {
+    z-index: 90000;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    width: 100vw;
+    height: 100vh;
+    left: -100vw;
+    margin-top: 18vw;
+    font-size: 6vw;
+    background-color: black;
+    transition: .3s;
+}
+
+#nav-menu .nav-wrap {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#nav-menu a {
+    display: inline-block;
+    -webkit-user-drag: none;
+    text-decoration: none;
+    color: #EEE;
+    text-transform: uppercase;
+}
+
+#nav-menu a::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+#nav-menu a:hover::after {width: 100%;}
+
+#nav-menu a:focus::after {width: 100%;}
+
+#nav-menu ul li {
+    margin-top: 7.5vw;
+    margin-left: 15.6vw;
+    list-style-type: none;
+}
+
+#nav-menu ul ul li {
+    margin-top: 7.5vw;
+}
+
+#nav-menu li:hover {cursor: pointer;}
+
+#nav-menu .drop-menu-btn {
+    position: relative;
+    left: -4vw;
+}
+
+#nav-menu .drop-menu-btn img {
+    position: relative;
+    left: -1.5vw;
+    transition: .2s;
+}
+
+.drop-menu {
+    height: 0;
+    overflow: hidden;
+}
+
+#nav-menu-icons {
+    z-index: 95000;
+    display: flex;
+    position: fixed;
+    left: -100%;
+    flex-direction: row;
+    justify-content: left;
+    width: 100vw;
+    height: 19vw;
+    background-color: black;
+    transition: .3s;
+}
+
+#nav-menu-icons img {height: 10vw;}
+
+.nav-icon {
+    width: 20%;
+    margin-top: 6vw;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-title {
+    font-size: 10vw;
+    font-family: 'ADLaM Display';
+    text-align: center;
+    color: #EEE;
+    padding-top: 24vw;
+    padding-bottom: 24vw;
+}
+
+@media screen and (min-width: 767px) {
+
+}
