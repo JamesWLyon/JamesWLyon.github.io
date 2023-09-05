@@ -14,7 +14,7 @@
 
         <title>Nav Bar Style #1</title>
     </head>
-    <body onload="WebsiteLoad(); GetProYears();" onresize="WebsiteLoad();">
+    <body onload="WebsiteLoad();" onresize="WebsiteLoad();">
 
         <div id="nav-mobil-btn" onclick="NavBtnMobil(0);">
             <div class="wrapper">
@@ -32,30 +32,72 @@
 
         <div id="nav-menu">
             <ul class="nav-wrap">
-                <li onclick="ChangePage(0);"><a href="#">home</a></li>
-                <li onclick="ChangePage(1);"><a href="#">about me</a></li>
+                <li onclick="ChangePage(0); NavBtnMobil();"><a href="#">home</a></li>
+                <li onclick="ChangePage(1); NavBtnMobil();"><a href="#">about me</a></li>
                 <li class="drop-menu-btn" onclick="NavDrop(0);"><img class="drop-menu-img" src="https://i.imgur.com/PJXmIa0.png" style="height: 4vw;"><a href="#">2023/24 - 10th grade</a>
                 <ul class="drop-menu">
-                    <li onclick="ChangePage();"><a href="#">Week 2</a></li>
-                    <li onclick="ChangePage();"><a href="#">Week 3</a></li>
+                    <li onclick="ChangePage(5); NavBtnMobil();"><a href="#">Week 2</a></li>
+                    <li onclick="ChangePage(6); NavBtnMobil();"><a href="#">Week 3</a></li>
                 </ul>
                 </li>
-                <li onclick="ChangePage();"><a href="#">resources</a></li>
+                <li onclick="ChangePage(2); NavBtnMobil();"><a href="#">resources</a></li>
+                <li onclick="ChangePage(3); NavBtnMobil();"><a href="#">credit</a></li>
                 <br>
             </ul>
         </div>
 
-        <!-- Home Page-->
+        <!-- Home Page #0-->
         <div class="page">
             <h1 class="page-title">My Progamming Journey</h1>
             <p class="page-text">
                 Hello, my name is James Lyon! I have been programming since 2018, aka for <span id="programming-years"></span> years. I started off making websites in Wix, but wanted to learn how to make the websites myself. I then started learning web development towards the middle of 2018 on Khan Academy. I then went through and completed the...
             </p>
-            <div class="continue-btn"><input type="button" value="Continue"></div>
+            <div class="continue-btn"><input onclick="ChangePage(1);" type="button" value="Continue"></div>
         </div>
 
+        <!-- About Me Page #1-->
         <div class="page">
-            <h1 class="page-title">Hello</h1>
+            <h1 class="page-title">About Me</h1>
+            <p class="page-text">
+                
+            </p>
+        </div>
+
+        <!-- Resources Page #2 -->
+        <div class="page">
+            <h1 class="page-title">Resources I Use</h1>
+            <p class="page-text">
+                
+            </p>
+        </div>
+
+        <!-- Credit Page #3 -->
+        <div class="page">
+            <h1 class="page-title">Credit To...</h1>
+            <p class="page-text">
+                
+            </p>
+        </div>
+
+        <!-- Week 1 #4 -->
+        <div class="page">
+            <h1 class="page-title"></h1>
+            <p class="page-text">
+                
+            </p>
+        </div>
+
+        <!-- Week 2 #5 -->
+        <div class="page">
+            <h1 class="page-title"> Week 2</h1>
+            <p class="page-text">
+                
+            </p>
+        </div>
+
+        <!-- Week 3 #6 -->
+        <div class="page">
+            <h1 class="page-title">Week 3</h1>
             <p class="page-text">
                 
             </p>
