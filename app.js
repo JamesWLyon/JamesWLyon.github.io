@@ -18,7 +18,7 @@ function WebsiteLoad (w) {
 // This makes the nav menu button on a phone move from side to side when clicked {
 // This is for phones
 
-function NavBtnMobil (w, i , item) {
+function NavBtnMobil (clik, w, i , item) {
 
     // This gets the nav menu button from the html file
     item = document.getElementById("nav-mobil-btn");
@@ -43,7 +43,9 @@ function NavBtnMobil (w, i , item) {
     }
     
     // This also adds a class to the wrapper div in the nav menu button
-    document.getElementsByClassName("wrapper")[0].classList.toggle("toggle");
+    if (clik == 0) {
+        document.getElementsByClassName("wrapper")[0].classList.toggle("toggle");
+    }
 }
 
 //}
@@ -74,11 +76,34 @@ function NavDrop (i, itm) {
 
 // Changes the website pages {
     
-function ChangePage (i) {
+function ChangePage (index) {
+
+    // Closes the nav menu
+    navBtn = 1;
+    NavBtnMobil();
 
     // Resets any drop menus
     dropArrow = 1;
     NavDrop(navDropNum);
+
+    // Changes the website page
+    var page = document.getElementsByClassName('page');
+    for (var i = 0; i < page.length; i++) {
+        page[i].style.display = 'none';
+    }
+    page[index].style.display = 'block';
+    window.scroll(0, 0);   
+}
+ChangePage(0);
+
+//}
+
+// Gets the the amount of years I have been programming {
+
+function GetProYears (i) {
+
+    i = new Date().getFullYear();
+    document.getElementById("programming-years").textContent = i - 2018;
 }
 
 //}
