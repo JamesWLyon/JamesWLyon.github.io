@@ -1,6 +1,17 @@
 // Varibles {
     
-    var navBtn = false;
+    var navBtn = 0, dropArrow = 0, navDropNum = 0;
+    var navDrop = document.getElementsByClassName("drop-menu-img");
+    var dropMenu = document.getElementsByClassName("drop-menu");
+
+//}
+
+// Runs when website is loaded and resized {
+
+function WebsiteLoad (w) {
+    w = window.innerHeight - ((window.innerWidth / 100) * 18);
+    document.getElementsByClassName("nav-wrap")[0].style.height = w + "px";
+}
 
 //}
 
@@ -28,11 +39,46 @@ function NavBtnMobil (w, i , item) {
         document.getElementById("nav-mobil-btn").style.marginLeft = "2.5vw";
         document.getElementById("nav-mobil-btn").style.backgroundColor = "rgb(0, 0, 0, 0.5)";
         document.getElementById("nav-menu").style.left = "-100vw";
-        document.getElementById("nav-menu-icons").style.left = "-80%";
+        document.getElementById("nav-menu-icons").style.left = "-100vw";
     }
     
     // This also adds a class to the wrapper div in the nav menu button
     document.getElementsByClassName("wrapper")[0].classList.toggle("toggle");
+}
+
+//}
+
+// This makes the drop menus in the nav menu work {
+
+function NavDrop (i, itm) {
+
+    // Sets the navDropNum variable to whatever the correct arrow number is
+    navDropNum = i;
+    // This sets the varible item to the class of that specific arrow
+    let item = navDrop[i];
+    // This gets the actual drop menu part
+    itm = dropMenu[i];
+    
+    if (dropArrow == 0) {
+        dropArrow = 1;
+        item.style.transform = "rotate(90deg)";
+        itm.style.height = "100%";
+    } else {
+        dropArrow = 0;
+        item.style.transform = "rotate(-0deg)";
+        itm.style.height = "0";
+    }
+}
+
+//}
+
+// Changes the website pages {
+    
+function ChangePage (i) {
+
+    // Resets any drop menus
+    dropArrow = 1;
+    NavDrop(navDropNum);
 }
 
 //}
