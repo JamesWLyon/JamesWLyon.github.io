@@ -88,16 +88,23 @@ function ChangePage (index) {
     page[index].style.display = 'block';
     window.scroll(0, 0);   
 }
-ChangePage(0);
+ChangePage(1);
 
 //}
 
 // Gets the the amount of years I have been programming {
 
-function GetProYears (i) {
+function GetProYears (y, item) {
 
-    i = new Date().getFullYear();
-    document.getElementById("programming-years").textContent = i - 2018;
+    // Gets the current year and finds out how many years it has been since 2018
+    y = (new Date().getFullYear()) - 2018;
+    // Gets the items we add this information to
+    item = document.getElementsByClassName("programming-years");
+
+    // Adds y to the items
+    for (var i = 0; i < item.length; i++) {
+        item[i].textContent = y;
+    }
 }
 
 //}
