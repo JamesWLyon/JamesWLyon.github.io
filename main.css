@@ -181,7 +181,6 @@ body {
 .page-text {
     width: 76vw;
     padding: 12vw;
-    padding-bottom: 0;
     font: 5vw 'Amiko';
     text-align: center;
     overflow: hidden;
