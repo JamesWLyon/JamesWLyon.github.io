@@ -10,7 +10,7 @@ body {
     cursor: default;
     user-select: none;
     -webkit-user-select: none;
-    background-image: linear-gradient(to bottom right, rgb(36, 42, 59), rgb(8, 38, 42));
+    background-image: linear-gradient(to bottom right, rgb(53, 64, 90), rgb(4, 33, 37));
 }
 
 #nav-mobil-btn {
@@ -148,7 +148,7 @@ body {
     flex-direction: row;
     justify-content: left;
     width: 100vw;
-    height: 18.1vw;
+    height: 19vw;
     background-color: black;
     transition: .3s;
 }
@@ -158,6 +158,20 @@ body {
 .nav-icon {
     width: 20%;
     margin-top: 6vw;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-title {
+    font-size: 10vw;
+    font-family: 'ADLaM Display';
+    text-align: center;
+    color: #EEE;
+    padding-top: 24vw;
+    padding-bottom: 24vw;
 }
 
 @media screen and (min-width: 767px) {
