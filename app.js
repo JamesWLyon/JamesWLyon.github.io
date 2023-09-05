@@ -88,7 +88,7 @@ function ChangePage (index) {
     page[index].style.display = 'block';
     window.scroll(0, 0);   
 }
-ChangePage(1);
+ChangePage(0);
 
 //}
 
