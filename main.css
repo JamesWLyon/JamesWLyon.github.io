@@ -78,10 +78,17 @@ body {
     width: 100vw;
     height: 100vh;
     left: -100vw;
-    padding-top: 18vw;
+    margin-top: 18vw;
     font-size: 6vw;
     background-color: black;
     transition: .3s;
+}
+
+#nav-menu .nav-wrap {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 #nav-menu a {
@@ -103,25 +110,46 @@ body {
 
 #nav-menu a:hover::after {width: 100%;}
 
-#nav-menu li {
-    margin: 5vw;
+#nav-menu a:focus::after {width: 100%;}
+
+#nav-menu ul li {
+    margin-top: 7.5vw;
+    margin-left: 15.6vw;
+    list-style-type: none;
+}
+
+#nav-menu ul ul li {
+    margin-top: 7.5vw;
 }
 
 #nav-menu li:hover {cursor: pointer;}
 
 #nav-menu .drop-menu-btn {
     position: relative;
-    left: -4.45vw;
+    left: -4vw;
+}
+
+#nav-menu .drop-menu-btn img {
+    position: relative;
+    left: -1.5vw;
+    transition: .2s;
+}
+
+.drop-menu {
+    height: 0;
+    overflow: hidden;
 }
 
 #nav-menu-icons {
     z-index: 95000;
     display: flex;
     position: fixed;
-    left: -80%;
+    left: -100%;
     flex-direction: row;
-    justify-content: center;
-    width: 80%;
+    justify-content: left;
+    width: 100vw;
+    height: 18.1vw;
+    background-color: black;
     transition: .3s;
 }
 
