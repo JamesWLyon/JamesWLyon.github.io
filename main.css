@@ -10,6 +10,7 @@ body {
     cursor: default;
     user-select: none;
     -webkit-user-select: none;
+    overflow-x: hidden;
     background-image: linear-gradient(to bottom right, rgb(53, 64, 90), rgb(4, 33, 37));
 }
 
@@ -155,9 +156,12 @@ body {
 
 #nav-menu-icons img {height: 10vw;}
 
-.nav-icon {
-    width: 20%;
+#nav-menu-icons a {
+    width: 10%;
+    height: 50%;
+    border-radius: 150%;
     margin-top: 6vw;
+    margin-right: 6vw;
 }
 
 .page {
@@ -172,6 +176,42 @@ body {
     color: #EEE;
     padding-top: 24vw;
     padding-bottom: 24vw;
+}
+
+.page-text {
+    width: 76vw;
+    padding: 12vw;
+    padding-bottom: 0;
+    font: 5vw 'Amiko';
+    text-align: center;
+    overflow: hidden;
+    color: black;
+    background-color: #EEE;
+}
+
+.continue-btn {
+    position: relative;
+    display: flex;
+    top: -1px;
+    left: 0px;
+    width: 100vw;
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #EEE;
+}
+
+.continue-btn input {
+    width: 50%;
+    height: 40%;
+    line-height: 40%;
+    font: 4vw 'Amiko';
+    border: none;
+    border-radius: 2vw;
+    overflow-x: hidden;
+    color: #EEE;
+    background-color: black;
 }
 
 @media screen and (min-width: 767px) {
