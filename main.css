@@ -17,7 +17,7 @@ body {
 }
 
 /* Styles any screen this size */
-@media handheld  {
+@media only screen and (min-width: 767)  {
     
     #nav-mobil-btn {
         z-index: 100000;
