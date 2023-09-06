@@ -3,6 +3,7 @@
     var navBtn = 0, dropArrow = 0, navDropNum = 0;
     var navDrop = document.getElementsByClassName("drop-menu-img");
     var dropMenu = document.getElementsByClassName("drop-menu");
+    var grade10 = document.getElementsByClassName("grade-10");
 
 //}
 
@@ -11,6 +12,13 @@
 function WebsiteLoad (w) {
     w = window.innerHeight - ((window.innerWidth / 100) * 18);
     document.getElementsByClassName("nav-wrap")[0].style.height = w + "px";
+
+    // Sets the background for all of my 10th grade pages
+    for (var i = 0; i < grade10.length; i++) {
+        grade10[i].style.backgroundImage = "url(https://i.imgur.com/WWQUhKl.png)";
+        grade10[i].style.backgroundSize = "120vw";
+        grade10[i].innerHTML = "<span>Week " + (i + 1) + "</span>";
+    }
 }
 
 //}
