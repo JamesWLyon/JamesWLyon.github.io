@@ -14,7 +14,7 @@ body {
     background-image: linear-gradient(to bottom right, rgb(53, 64, 90), rgb(4, 33, 37));
 }
 
-@media only screen and (min-width: 767px) {
+@media screen and (min-width: 767px) {
     
     #nav-mobil-btn {
         z-index: 100000;
@@ -295,6 +295,6 @@ body {
     }
 }
 
-@media only screen and (min-width: 767px) {
+@media  screen and (min-width: 767px) {
 
 }
