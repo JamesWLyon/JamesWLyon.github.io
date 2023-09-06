@@ -1,1 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom right, rgb(53, 64, 90), rgb(4, 33, 37));
+}
+
+#nav-mobil-btn {
+    z-index: 100000;
+    display: block;
+    position: fixed;
+    width: 15vw;
+    min-width: 170px;
+    max-width: 200px;
+    height: 15vw;
+    min-height: 170px;
+    max-height: 200px;
+    margin: 2.5vw;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: .3s;
+}
+
+#nav-mobil-btn:hover {
+    cursor: pointer;
+}
+
+#nav-mobil-btn .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: 6%;
+    background-color: #EEE;
+    transition: .3s;
+}
+
+.toggle .one {
+    transform: translateY(2.9vw) rotate(45deg);
+}
+
+.toggle .two {
+    width: 0;
+    opacity: 0;
+}
+
+.toggle .three {
+    transform: translateY(-2.9vw) rotate(-45deg);
+}
+
+#nav-menu {
+    z-index: 90000;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    width: 100vw;
+    height: 100vh;
+    left: -100vw;
+    margin-top: 18vw;
+    font-size: 6vw;
+    background-color: black;
+    transition: .3s;
+}
+
+#nav-menu .nav-wrap {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#nav-menu a {
+    display: inline-block;
+    -webkit-user-drag: none;
+    text-decoration: none;
+    color: #EEE;
+    text-transform: uppercase;
+}
+
+#nav-menu a::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+#nav-menu a:hover::after {width: 100%;}
+
+#nav-menu a:focus::after {width: 100%;}
+
+#nav-menu ul li {
+    margin-top: 7.5vw;
+    margin-left: 15.6vw;
+    list-style-type: none;
+}
+
+#nav-menu ul ul li {
+    margin-top: 7.5vw;
+}
+
+#nav-menu li:hover {cursor: pointer;}
+
+#nav-menu .drop-menu-btn {
+    position: relative;
+    left: -4vw;
+}
+
+#nav-menu .drop-menu-btn img {
+    position: relative;
+    left: -1.5vw;
+    transition: .2s;
+}
+
+.drop-menu {
+    height: 0;
+    overflow: hidden;
+}
+
+#nav-menu-icons {
+    z-index: 95000;
+    display: flex;
+    position: fixed;
+    left: -100%;
+    flex-direction: row;
+    justify-content: left;
+    width: 100vw;
+    height: 19vw;
+    background-color: black;
+    transition: .3s;
+}
+
+#nav-menu-icons img {height: 10vw;}
+
+#nav-menu-icons a {
+    width: 10%;
+    height: 50%;
+    border-radius: 150%;
+    margin-top: 6vw;
+    margin-right: 6vw;
+}
+
+.page {
+    width: 100vw;
+    height: 0vh;
+    transition: 1s;
+}
+
+.page-title {
+    font-size: 10vw;
+    font-family: 'ADLaM Display';
+    text-align: center;
+    color: #EEE;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.page-title span {
+    display: block;
+    width: 100%;
+    padding-top: 24vw;
+    padding-bottom: 24vw;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.page-text {
+    width: 76vw;
+    padding: 12vw;
+    font: 5vw 'Amiko';
+    text-align: center;
+    overflow: hidden;
+    color: black;
+    background-color: #EEE;
+}
+
+.continue-btn {
+    position: relative;
+    display: flex;
+    top: -1px;
+    left: 0px;
+    width: 100vw;
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #EEE;
+    transition: .3s;
+}
+
+.continue-btn input {
+    width: 50%;
+    height: 40%;
+    line-height: 40%;
+    font: 4vw 'Amiko';
+    border: none;
+    border-radius: 2vw;
+    overflow-x: hidden;
+    color: #EEE;
+    background-color: black;
+    transition: .3s;
+}
+
+.continue-btn input:hover {
+    width: 52%;
+    height: 42%;
+}
+
+#programs-i-know {
+    width: 80vw;
+    padding: 10vw;
+    padding-bottom: 3vw;
+    font: 5vw 'Amiko';
+    color: #EEE;
+    background-color: black;
+}
+
+#programs-i-know .item {
+    display: flex;
+    height: 12vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#programs-i-know .item u {width: 100%;}
+
+#programs-i-know span {width: 50%;}
+
+#programs-i-know .left {text-align: left;}
+
+#programs-i-know .right {text-align: right;}
+
+#programs-i-know .beginner {
+    color: rgb(255, 0, 0, 0.8);
+    text-shadow: 1px 1px 5px rgb(255, 0, 0, 0.5);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+#programs-i-know .novice {
+    color: rgb(255, 204, 0, 0.8);
+    text-shadow: 1px 1px 5px rgb(255, 204, 0, 0.5);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+#programs-i-know .intermediate {
+    color: rgb(185, 255, 46, 0.8);
+    text-shadow: 1px 1px 7px rgb(185, 255, 46, 0.5);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+#programs-i-know .advanced {
+    color: rgb(24, 239, 0, 0.8);
+    text-shadow: 1px 1px 5px rgb(24, 239, 0, 0.5);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+.latest-project {
+    width: 80vw;
+    font: 5vw 'Amiko';
+    text-align: center;
+    padding: 10vw;
+    color: #EEE;
+    background-color: black;
+}
+
+.latest-project a {
+    text-decoration: none;
+    color: rgb(255, 0, 89);
+}
+
+@media screen and (min-width: 767px) {
+
+}
