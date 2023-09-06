@@ -17,7 +17,7 @@ body {
 }
 
 /* Styles any screen this size */
-@media only screen and (min-width: 767)  {
+@media only screen and (min-width: 767px)  {
     
     #nav-mobil-btn {
         z-index: 100000;
@@ -296,8 +296,28 @@ body {
         text-decoration: none;
         color: rgb(255, 0, 89);
     }
-}
 
-@media  screen and (min-width: 767px) {
+    .extra-resources {
+        display: flex;
+        position: relative;
+        width: 80vw;
+        top: -1px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10vw;
+        padding-top: 0vw;
+        text-align: center;
+        font: 5vw 'Amiko';
+        background-color: #EEE;
+    }
 
+    .extra-resources span {
+        width: 100%;
+    }
+
+    .extra-resources a {
+        width: 100%;
+        margin-top: 1vw;
+        color: blue;
+    }
 }
