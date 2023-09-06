@@ -83,9 +83,9 @@ function ChangePage (index) {
     // Changes the website page
     var page = document.getElementsByClassName('page');
     for (var i = 0; i < page.length; i++) {
-        page[i].style.display = 'none';
+        page[i].style.display = "none";
     }
-    page[index].style.display = 'block';
+    page[index].style.display = "block";
     window.scroll(0, 0);   
 }
 ChangePage(0);
