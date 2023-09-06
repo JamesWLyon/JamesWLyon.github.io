@@ -166,7 +166,8 @@ body {
 
 .page {
     width: 100vw;
-    height: 100vh;
+    height: 0vh;
+    transition: 1s;
 }
 
 .page-title {
@@ -174,8 +175,17 @@ body {
     font-family: 'ADLaM Display';
     text-align: center;
     color: #EEE;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.page-title span {
+    display: block;
+    width: 100%;
     padding-top: 24vw;
     padding-bottom: 24vw;
+    background-color: rgb(0, 0, 0, 0.4);
 }
 
 .page-text {
@@ -199,6 +209,7 @@ body {
     align-items: center;
     overflow-x: hidden;
     background-color: #EEE;
+    transition: .3s;
 }
 
 .continue-btn input {
@@ -211,6 +222,12 @@ body {
     overflow-x: hidden;
     color: #EEE;
     background-color: black;
+    transition: .3s;
+}
+
+.continue-btn input:hover {
+    width: 52%;
+    height: 42%;
 }
 
 #programs-i-know {
@@ -259,6 +276,20 @@ body {
     color: rgb(24, 239, 0, 0.8);
     text-shadow: 1px 1px 5px rgb(24, 239, 0, 0.5);
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+.latest-project {
+    width: 80vw;
+    font: 5vw 'Amiko';
+    text-align: center;
+    padding: 10vw;
+    color: #EEE;
+    background-color: black;
+}
+
+.latest-project a {
+    text-decoration: none;
+    color: rgb(255, 0, 89);
 }
 
 @media screen and (min-width: 767px) {
