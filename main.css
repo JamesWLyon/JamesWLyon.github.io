@@ -1,8 +1,10 @@
+/* Styles everything */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Styles the body */
 body {
     width: 100vw;
     height: 100vh;
@@ -14,7 +16,8 @@ body {
     background-image: linear-gradient(to bottom right, rgb(53, 64, 90), rgb(4, 33, 37));
 }
 
-@media screen and (min-width: 767px) {
+/* Styles any screen this size */
+@media handheld  {
     
     #nav-mobil-btn {
         z-index: 100000;
