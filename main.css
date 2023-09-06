@@ -213,6 +213,54 @@ body {
     background-color: black;
 }
 
+#programs-i-know {
+    width: 80vw;
+    padding: 10vw;
+    padding-bottom: 3vw;
+    font: 5vw 'Amiko';
+    color: #EEE;
+    background-color: black;
+}
+
+#programs-i-know .item {
+    display: flex;
+    height: 12vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#programs-i-know .item u {width: 100%;}
+
+#programs-i-know span {width: 50%;}
+
+#programs-i-know .left {text-align: left;}
+
+#programs-i-know .right {text-align: right;}
+
+#programs-i-know .beginner {
+    color: rgb(255, 0, 0, 0.8);
+    text-shadow: 1px 1px 5px rgb(255, 0, 0, 0.8);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.65);
+}
+
+#programs-i-know .novice {
+    color: rgb(255, 204, 0, 0.8);
+    text-shadow: 1px 1px 5px rgb(255, 204, 0, 0.8);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.65);
+}
+
+#programs-i-know .intermediate {
+    color: rgb(185, 255, 46, 0.8);
+    text-shadow: 1px 1px 7px rgb(185, 255, 46, 0.8);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.65);
+}
+
+#programs-i-know .advanced {
+    color: rgb(24, 239, 0, 0.8);
+    text-shadow: 1px 1px 5px rgb(24, 239, 0, 0.8);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.65);
+}
+
 @media screen and (min-width: 767px) {
 
 }
