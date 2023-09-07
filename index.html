@@ -145,7 +145,7 @@
             </p>
             <div class="extra-resources">
                 <span>Learn More Here</span>
-                <a href="https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/" target="_blank">Geeks For Greeks</a>
+                <a href="https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/" target="_blank">Geeks For Geeks</a>
                 <a href="https://www.watelectronics.com/types-of-programming-languages-with-differences/" target="_blank">WatElectronics</a>
                 <a href="https://www.computerhope.com/jargon/p/programming-language.htm" target="_blank">Computer Hope</a>
             </div>
@@ -186,8 +186,8 @@
                 <a href="https://www.w3schools.com/java/java_data_types_numbers.asp" target="_blank">W3Schools</a>
                 <a href="https://www.javatpoint.com/java-variables" target="_blank">Java Point #1</a>
                 <a href="https://www.javatpoint.com/system-out-println-in-java" target="_blank">Java Point #2</a>
-                <a href="https://www.geeksforgeeks.org/variables-in-java/" target="_blank">Geeks For Greeks #1</a>
-                <a href="https://www.geeksforgeeks.org/system-out-println-in-java/" target="_blank">Geeks For Greeks #2</a>
+                <a href="https://www.geeksforgeeks.org/variables-in-java/" target="_blank">Geeks For Geeks #1</a>
+                <a href="https://www.geeksforgeeks.org/system-out-println-in-java/" target="_blank">Geeks For Geeks #2</a>
                 <a href="https://data-flair.training/blogs/variables-in-java/" target="_blank">Data Flair</a>
                 <a href="https://beginnersbook.com/2021/08/system-out-println-in-java-explained-with-examples/" target="_blank">Begineers Point</a>
             </div>
@@ -196,9 +196,99 @@
         <!-- Week 3 #6 -->
         <div class="page">
             <h1 class="page-title grade-10"></h1>
-            <p class="page-text">
-                
+            <p class="page-text" tyle="padding-bottom: 2vw;">
+                This week I learned about the way to change the direction of an <strong>Imperative</strong> programming language. Also known as flow controll. The first of many ways to change the flow of an <strong>Imperative</strong> program is with an if/else statement. The if part of the if/else statement always comes first, and will have some conditions it has to follow to run.
             </p>
+            <div class="code-snippet" style="position: relative; top: -10vw; margin-bottom: -10.1vw;">
+<pre>
+<code><span class="comment">/* This the if statement, everything in the () is the conditions to make this if statement work.
+There can be more than one condition, just add && to say and, or || to say or. */</span>
+<span class="magenta">if (</span><span class="variable">i</span> == <span class="num-let">5</span><span class="magenta">) {</span>
+    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="num-let">"Hello world"</span><span class="magenta">)</span>;
+<span class="magenta">}</span>
+
+<span class="comment">// This is an if statemnt with more than one condition</span>
+<span class="magenta">if (</span><span class="variable">x</span> == <span class="num-let">22</span> && <span class="variable">y</span> == <span class="num-let">10</span> || <span class="variable">v</span> == <span class="num-let">3</span><span class="magenta">) {</span>
+    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="num-let">"Goodbye earth"</span><span class="magenta">)</span>;
+<span class="magenta">}</span></code>
+</pre>
+            </div>
+            <p class="page-text" style="padding-top: 1vw; padding-bottom: 2vw;">
+                Now there is also the else part which you do not need, but can be added on for another route for the code. Like if you had a double variable called num get a random number between 1 and 10, and a if/else statement that says <span class="snippet-code">if (num <= 5)</span> say "little numbers", else say "big numbers". You can also add an if behind an else for more descrition. Like <span class="snippet-code">else if (num == 10)</span> say "huge number".
+            </p>
+            <div class="code-snippet" style="margin-bottom: -1px;">
+<pre>
+<code><span class="comment">/* This is a demonstration of an if/else statement
+It also has an else if as well */</span>
+
+<span class="comment">// This is the variable, it is a random number</span>
+<span class="var-type">double</span> <span class="variable">num</span> = <span class="lime-green">Math</span>.floor<span class="magenta">(</span><span class="lime-green">Math</span>.<span class="mellow-yellow">random</span><span class="var-type">()</span> * <span class="var-type">(</span><span class="num-let">10</span> - <span class="num-let">1</span> + <span class="num-let">1</span><span class="var-type">)</span> + <span class="num-let">1</span><span class="magenta">)</span>;
+
+<span class="comment">// This will run if its condition is met</span>
+<span class="magenta">if (</span><span class="variable">num</span> <= <span class="num-let">5</span><span class="magenta">) {</span>
+    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="num-let">"little numbers"</span><span class="magenta">)</span>;
+<span class="magenta">}</span>
+<span class="comment">// This will run if its condition is met and the code above did not run</span>
+<span class="magenta">else if (</span><span class="variable">num</span> == <span class="num-let">10</span><span class="magenta">) {</span>
+    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="num-let">"huge number"</span><span class="magenta">)</span>;
+<span class="magenta">}</span>
+<span class="comment">// This will run if the code above it does not run</span>
+<span class="magenta">else {</span>
+    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="num-let">"big numbers"</span><span class="magenta">)</span>;
+<span class="magenta">}</span></code>
+</pre>
+            </div>
+            <p class="page-text" style="padding-top: 1vw; padding-bottom: 2vw;">
+                Another thing I learned was switch statements. These are pretty cool little things that help out when programming a <em>Java</em> file. You could have it say <span class="snippet-code">if (up), go_down(),</span> which can also be written as <span class="snippet-code">direction == up, go_down(),</span> and you can add as many of these as you need.
+            </p>
+            <div class="code-snippet" style="margin-bottom: -1px;">
+<pre><code><span class="comment">// Format them with a comma at the end</span>
+<span class="magenta">if</span> <span class="var-type">(</span>up<span class="var-type">)</span>, <span class="mellow-yellow">go_down</span>(),
+<span class="magenta">if</span> <span class="var-type">(</span>down<span class="var-type">)</span>, <span class="mellow-yellow">go_up</span>();
+
+<span class="comment">// It can also be written this way</span>
+<span class="var-type">direction</span> == up, <span class="mellow-yellow">go_down</span><span class="var-type">()</span>,
+<span class="var-type">direction</span> == down, <span class="mellow-yellow">go_up</span><span class="var-type">()</span>,</code>
+</pre>
+            </div>
+            <p class="page-text" style="padding-top: 1vw; padding-bottom: 2vw;">
+                The last thing I learned is loops! There is for loops and while loops which both run of a variable and repeat there code a certain amount of times. A for loop has a variable inside of it that if this varible is does not meet the condition will change by either adding or losing numbers until it meets the condition while also running the code in itself.
+            </p>
+            <div class="code-snippet" style="margin-bottom: -1px;">
+<pre><code><span class="comment">// This for loop will run and print what number it's on till it reaches 10</span>
+<span class="magenta">for (</span><span class="lime-green">var</span> <span class="variable">i</span> = <span class="num-let">0</span>; <span class="variable">i</span> <= <span class="num-let">10</span>; <span class="variable">i</span>++<span class="magenta">) {</span>
+    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="variable">i</span><span class="magenta">)</span>;
+<span class="magenta">}</span>
+
+<span class="comment">/* This while loop will run and print what number it's on till it reaches 0
+This variable is its number */</span>
+<span class="var-type">byte</span> <span class="variable">x</span> = <span class="num-let">10</span>;
+
+<span class="magenta">while</span> <span class="var-type">(</span><span class="variable">x</span> >= <span class="num-let">0</span><span class="var-type">) {</span>
+    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="variable">x</span><span class="magenta">)</span>;
+    <span class="variable">x</span>--;
+<span class="var-type">}</span></code>
+</pre>
+            </div>
+            <p class="page-text" style="padding-top: 1vw">Now a while loop is very simular to a for loop with a few key diffences. First off it does not have the variable inside it, the variable it has is outside of the loop entirely. Secondly when it changes the value of it's variable it can be anywhere inside the loop. Which is gonna be very helpful in the future.</p>
+            <div class="extra-resources" style="margin-bottom: -1px;">
+                <span>Learn About If/Else</span>
+                <a href="https://www.javatpoint.com/java-if-else" target="_blank">Java Point</a>
+                <a href="https://www.geeksforgeeks.org/java-if-statement-with-examples/" target="_blank">Geeks For Geeks</a>
+                <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html" target="_blank">Oracle Java Docs</a>
+            </div>
+            <div class="extra-resources" style="margin-bottom: -1px;">
+                <span>Learn About Switch Statements</span>
+                <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html" target="_blank">Oracle Switch Docs</a>
+                <a href="https://www.w3schools.com/java/java_switch.asp" target="_blank">W3Schools</a>
+                <a href="https://www.geeksforgeeks.org/switch-statement-in-java/" target="_blank">Geeks For Geeks</a>
+            </div>
+            <div class="extra-resources">
+                <span>Learn About Loops</span>
+                <a href="https://www.geeksforgeeks.org/loops-in-java/?ref=lbp" target="_blank">Geeks For Geeks</a>
+                <a href="https://www.javatpoint.com/java-for-loop" target="_blank">Java Point</a>
+                <a href="https://techvidvan.com/tutorials/java-loops/" target="_blank">TechVidVan</a>
+            </div>
         </div>
 
         <script src="app.js"></script>
