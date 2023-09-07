@@ -19,6 +19,7 @@ body {
 /* Styles any screen this size */
 @media only screen and (min-width: 767px)  {
     
+    /* Styles the nav button for mobile */
     #nav-mobil-btn {
         z-index: 100000;
         display: block;
@@ -35,6 +36,7 @@ body {
         transition: .3s;
     }
 
+    /* Changes your pointer to cursor when hovering over it */
     #nav-mobil-btn:hover {
         cursor: pointer;
     }
@@ -50,6 +52,7 @@ body {
         align-items: center;
     }
 
+    /* Styles the lines in the button */
     .line {
         display: block;
         position: relative;
@@ -73,6 +76,7 @@ body {
         transform: translateY(-2.9vw) rotate(-45deg);
     }
 
+    /* Styles the nav menu for mobile */
     #nav-menu {
         z-index: 90000;
         position: fixed;
@@ -97,6 +101,7 @@ body {
         overflow-y: scroll;
     }
 
+    /* Styles the nav buttons the mobile nav menu */
     #nav-menu a {
         display: inline-block;
         -webkit-user-drag: none;
@@ -130,6 +135,7 @@ body {
 
     #nav-menu li:hover {cursor: pointer;}
 
+    /* Styles the drop button and drop menu in the mobile nav menu */
     #nav-menu .drop-menu-btn {
         position: relative;
         left: -4vw;
@@ -145,7 +151,8 @@ body {
         height: 0;
         overflow: hidden;
     }
-
+    
+    /* Styles the icons in the mobile nav menu */
     #nav-menu-icons {
         z-index: 95000;
         display: flex;
@@ -169,12 +176,14 @@ body {
         margin-right: 6vw;
     }
 
+    /* Styles the website pages */
     .page {
         width: 100vw;
         height: 0vh;
         transition: 1s;
     }
 
+    /* Styles the website page titles */
     .page-title {
         font-size: 10vw;
         font-family: 'ADLaM Display';
@@ -193,20 +202,21 @@ body {
         background-color: rgb(0, 0, 0, 0.4);
     }
 
+    /* Styles any main text in any website page */
     .page-text {
         width: 76vw;
         padding: 12vw;
         font: 5vw 'Amiko';
         text-align: center;
         overflow: hidden;
+        margin-bottom: -1px;
         color: black;
         background-color: #EEE;
     }
 
+    /* Styles any continue button */
     .continue-btn {
-        position: relative;
         display: flex;
-        top: -1px;
         left: 0px;
         width: 100vw;
         height: 20vw;
@@ -235,6 +245,7 @@ body {
         height: 42%;
     }
 
+    /* This styles the programs I knowon the about me webpage */
     #programs-i-know {
         width: 80vw;
         padding: 10vw;
@@ -259,30 +270,35 @@ body {
 
     #programs-i-know .right {text-align: right;}
 
+    /* Styles beginner colors */
     #programs-i-know .beginner {
         color: rgb(255, 0, 0, 0.8);
         text-shadow: 1px 1px 5px rgb(255, 0, 0, 0.5);
         text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
     }
 
+    /* Styles novice colors */
     #programs-i-know .novice {
         color: rgb(255, 204, 0, 0.8);
         text-shadow: 1px 1px 5px rgb(255, 204, 0, 0.5);
         text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
     }
 
+    /* Styles intermediate colors */
     #programs-i-know .intermediate {
         color: rgb(185, 255, 46, 0.8);
         text-shadow: 1px 1px 7px rgb(185, 255, 46, 0.5);
         text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
     }
 
+    /* Styles advanced colors */
     #programs-i-know .advanced {
         color: rgb(24, 239, 0, 0.8);
         text-shadow: 1px 1px 5px rgb(24, 239, 0, 0.5);
         text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
     }
 
+    /* This styles the block that has the button to go to my latest project on the home webpage */
     .latest-project {
         width: 80vw;
         font: 5vw 'Amiko';
@@ -292,16 +308,16 @@ body {
         background-color: black;
     }
 
+    /* this styles the go to latest project button on the home webpage */
     .latest-project a {
         text-decoration: none;
         color: rgb(255, 0, 89);
     }
 
+    /* This styles any extra resouces a page may have */
     .extra-resources {
         display: flex;
-        position: relative;
         width: 80vw;
-        top: -1px;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 10vw;
@@ -315,9 +331,44 @@ body {
         width: 100%;
     }
 
+    /* This styles extra resouce links */
     .extra-resources a {
         width: 100%;
         margin-top: 1vw;
+        font-size: 5vw;
         color: blue;
     }
+
+    .code-snippet {
+        display: block;
+        width: 100vw;
+        height: auto;
+        padding-bottom: 2vw;
+        justify-content: center;
+        background-color: #EEE;
+    }
+
+    pre {
+        display: block;
+        width: 70%;
+        max-width: 70%;
+        min-width: 70%;
+        height: auto;
+        max-height: 50vw;
+        min-height: 4vw;
+        resize: vertical;
+        padding: 3vw;
+        margin-left: 12vw;
+        font: 3.5vw monospace;
+        overflow: auto;
+        border-radius: 2vw;
+        word-wrap: break-word;
+        color: #f36d33;
+        background: black;
+    }
+
+    pre span {
+        color: rgb(110, 110, 110);
+    }
+
 }
