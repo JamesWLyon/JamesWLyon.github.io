@@ -339,6 +339,7 @@ body {
         color: blue;
     }
 
+    /* Styles and code snippets in the website*/
     .code-snippet {
         display: block;
         width: 100vw;
@@ -363,12 +364,28 @@ body {
         overflow: auto;
         border-radius: 2vw;
         word-wrap: break-word;
-        color: #f36d33;
+        color: #EEE;
         background: black;
     }
 
-    pre span {
+    /* Colors the comments in the code snippets */
+    pre .comment {
         color: rgb(110, 110, 110);
+    }
+
+    /* Colors the variables in the code snippets */
+    pre .variable {
+        color: lightskyblue;
+    }
+
+    /* Colors the variables types in the code snippets */
+    pre .var-type {
+        color: rgb(36, 171, 255);
+    }
+
+    /* Colors the numbers and letters in the code snippets */
+    pre .num-let {
+        color: rgb(154, 241, 158);
     }
 
 }
