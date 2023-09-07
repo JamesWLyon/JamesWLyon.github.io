@@ -368,6 +368,11 @@ body {
         background: black;
     }
 
+    pre code {
+        user-select: all;
+        line-height: 4.5vw;
+    }
+
     /* Colors the comments in the code snippets */
     pre .comment {
         color: rgb(110, 110, 110);
@@ -388,4 +393,25 @@ body {
         color: rgb(154, 241, 158);
     }
 
+    /* Colors the code magenta */
+    pre .magenta {
+        color: rgb(211, 18, 211);
+    }
+
+    /* Colors the code lime-green */
+    pre .lime-green {
+        color: rgb(52, 247, 182);
+    }
+
+    /* Colors the code mellow yellow */
+    pre .mellow-yellow {
+        color: rgb(244, 255, 148);
+    }
+
+    /*  Styles code in sentences */
+    .snippet-code {
+        color: #f36d33;
+        font-family: 'Lucida Grande', monospace;
+        background-color: #f4f4f4;
+    }
 }
