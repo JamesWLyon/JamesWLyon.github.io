@@ -12,6 +12,14 @@
         <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
 
+        <!-- Preloaded images so no weird loading things happen -->
+        <link rel="preload" href="https://i.imgur.com/ksJeqIa.png" as="image">
+        <link rel="preload" href="https://i.imgur.com/GvcRZwi.png" as="image">
+        <link rel="preload" href="https://i.imgur.com/d0uadWb.png" as="image">
+        <link rel="preload" href="https://i.imgur.com/CEwxdxe.png" as="image">
+        <link rel="preload" href="https://i.imgur.com/WWQUhKl.png" as="image">
+
+
         <title>JamesWLyon</title>
     </head>
     <body onload="WebsiteLoad(); GetProYears();" onresize="WebsiteLoad();">
@@ -66,8 +74,12 @@
                 Hello, my name is James Lyon! I have been programming since 2018, aka for <span class="programming-years"></span> years. I started off making websites in Wix, but wanted to learn how to make the websites myself. I then started learning web development towards the middle of 2018 on Khan Academy. I then went through and completed the <em>HTML</em> and the <em>Javascript</em> courses on Khan Acadedemy. After that I decided to improve my <em>HTML</em> skills and just solely made websites for all of 2019 and 2020. In the beginning of 2021 I decided I had become very proficient with my skills and decided to learn a new language. I started to learn <em>PHP</em>, <em>SQL</em>, and <em>Python</em>. I started to learn these and have contined till this day. Along the way sometime in 2022 I also learned how to use the <em>Terminal/Command Line</em>.
             </p>
             <div id="programs-i-know">
+                <div>
+                    <p class="text-page">Here are the programming languages I know and how well I know them.</p><br>
+                </div>
                 <div class="item">
-                    <u class="left">Languages I Know</u>
+                    <span class="left" style="text-decoration: underline;">Languages</span>
+                    <span class="right" style="text-decoration: underline;">Skill Level</span>
                 </div>
                 <div class="item">
                     <span class="left">HTML</span>
@@ -119,8 +131,9 @@
         <!-- Credit Page #3 -->
         <div class="page">
             <h1 class="page-title" style="background-image: url(https://i.imgur.com/CEwxdxe.png); background-size: 100vw;"><span>Credit To...</span></h1>
-            <p class="page-text">
-                
+            <p class="page-text credits">
+                <span class="left"></span>
+                <span class="right"></span>
             </p>
         </div>
 
@@ -146,22 +159,22 @@
             </p>
             <div class="code-snippet">
 <pre>
-<code class="black-code"><span>// Byte can store whole numbers between -128 and 127</span>
-byte myAge = 16;
-<span>// Short can store whole numbers between -32768 and 32767</span>
-short shoeSize = 23754;
-<span>// Int can store whole numbers between -2147483648 and 2147483647</span>
-int amountPeople = -2356789;
-<span>// Long can store whole numbers between -9223372036854775808 and 9223372036854775807</span>
-long money = 8374736746344393;
-<span>// Float can store fractional numbers, is great for storing numbers to the 6th or 7th decimal point</span>
-float timer = 5.637348;
-<span>// Double can store fractional numbers, is great for storing numbers to the 15th decimal point</span>
-double score = 183.38473883734292;
-<span>// Boolean stores a true or false value</span>
-boolean alive = false;
-<span>// Char stores a single character/letter or ASCII values</span>
-char myLetter = "L";</code>
+<code class="black-code"><span class="comment">// Byte can store whole numbers between -128 and 127</span>
+<span class="var-type">byte</span> <span class="variable">myAge</span> = <span class="num-let">16</span>;
+<span class="comment">// Short can store whole numbers between -32768 and 32767</span>
+<span class="var-type">short</span> <span class="variable">shoeSize</span> = <span class="num-let">-23754</span>;
+<span class="comment">// Int can store whole numbers between -2147483648 and 2147483647</span>
+<span class="var-type">int</span> <span class="variable">amountPeople</span> = <span class="num-let">93564789</span>;
+<span class="comment">// Long can store whole numbers between -9223372036854775808 and 9223372036854775807</span>
+<span class="var-type">long</span> <span class="variable">money</span> = <span class="num-let">8374736746344393</span>;
+<span class="comment">// Float can store fractional numbers, is great for storing numbers to the 6th or 7th decimal point</span>
+<span class="var-type">float</span> <span class="variable">timer</span> = <span class="num-let">5.637348</span>;
+<span class="comment">// Double can store fractional numbers, is great for storing numbers to the 15th decimal point</span>
+<span class="var-type">double</span> <span class="variable">score</span> = <span class="num-let">183.38473883734292</span>;
+<span class="comment">// Boolean stores a true or false value</span>
+<span class="var-type">boolean</span> <span class="variable">alive</span> = <span class="var-type">false</span>;
+<span class="comment">// Char stores a single character/letter or ASCII values</span>
+<span class="var-type">char</span> <span class="variable">myLetter</span> = <span class="num-let">"L"</span>;</code>
 </pre>
             </div>
             <p class="page-text" style="position: relative; top: -1px; padding-top: 2vw;">
