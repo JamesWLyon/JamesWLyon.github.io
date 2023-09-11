@@ -47,6 +47,7 @@
                     <li onclick="ChangePage(4); NavBtnMobil();"><a href="#">Week 1</a></li>
                     <li onclick="ChangePage(5); NavBtnMobil();"><a href="#">Week 2</a></li>
                     <li onclick="ChangePage(6); NavBtnMobil();"><a href="#">Week 3</a></li>
+                    <li onclick="ChangePage(7); NavBtnMobil();"><a href="#">Week 4</a></li>
                 </ul>
                 </li>
                 <li onclick="ChangePage(2); NavBtnMobil();"><a href="#">resources</a></li>
@@ -63,7 +64,7 @@
             </p>
             <div class="continue-btn"><input onclick="ChangePage(1);" type="button" value="Continue"></div>
             <div class="latest-project">
-                <span>View my latest <a href="javascript: ChangePage(6);">project</a>.</span>
+                <span>View my latest <a href="javascript: ChangePage(7);">project</a>.</span>
             </div>
         </div>
 
@@ -131,9 +132,17 @@
         <!-- Credit Page #3 -->
         <div class="page">
             <h1 class="page-title" style="background-image: url(https://i.imgur.com/CEwxdxe.png); background-size: 100vw;"><span>Credit To...</span></h1>
-            <p class="page-text credits">
-                <span class="left"></span>
-                <span class="right"></span>
+            <p class="credits">
+                <span class="left">Website Made By</span>
+                <span class="right">James Lyon</span>
+                <span class="left">Website Hosted On</span>
+                <span class="right"><a href="https://github.com" target="_blank">GitHub</a></span>
+                <span class="left">Pictures From</span>
+                <span class="right">Google</span>
+                <span class="left">Pictures Hosted On</span>
+                <span class="right"><a href="https://Imgur.com" target="_blank">Imgur</a></span>
+                <span class="left">Google Fonts From</span>
+                <span class="right" style="border-bottom: .1em solid black;"><a href="https://www.w3schools.com/howto/howto_google_fonts.asp" target="_blank">W3Schools</a></span>
             </p>
         </div>
 
@@ -155,27 +164,10 @@
         <div class="page">
             <h1 class="page-title grade-10"></h1>
             <p class="page-text" style="padding-bottom: 2vw;">
-                This week I worked on my first program for this class! A hello world in a <em>Java</em> file. Where I learned to make a <em>Java</em> file and set it up, as well write a line in the console. I also learned about variables and that there are two types of variables in <em>Java</em>. You have <strong>Primitive</strong> variables and <strong>Non-primitive</strong> variables. The <strong>Primitive</strong> variables are byte, short, int, long, float, double, boolean and char.
+                This week I worked on my first program for this class! A hello world in a <em>Java</em> file. Where I learned to make a <em>Java</em> file and set it up, as well write a line in the console. I also learned about variables, aka data types, and that there are two types of variables in <em>Java</em>. You have <strong>Primitive</strong> variables and <strong>Non-primitive</strong> variables. The <strong>Primitive</strong> variables are byte, short, int, long, float, double, boolean and char.
             </p>
             <div class="code-snippet">
-<pre>
-<code class="black-code"><span class="comment">// Byte can store whole numbers between -128 and 127</span>
-<span class="var-type">byte</span> <span class="variable">myAge</span> = <span class="num-let">16</span>;
-<span class="comment">// Short can store whole numbers between -32768 and 32767</span>
-<span class="var-type">short</span> <span class="variable">shoeSize</span> = <span class="num-let">-23754</span>;
-<span class="comment">// Int can store whole numbers between -2147483648 and 2147483647</span>
-<span class="var-type">int</span> <span class="variable">amountPeople</span> = <span class="num-let">93564789</span>;
-<span class="comment">// Long can store whole numbers between -9223372036854775808 and 9223372036854775807</span>
-<span class="var-type">long</span> <span class="variable">money</span> = <span class="num-let">8374736746344393</span>;
-<span class="comment">// Float can store fractional numbers, is great for storing numbers to the 6th or 7th decimal point</span>
-<span class="var-type">float</span> <span class="variable">timer</span> = <span class="num-let">5.637348</span>;
-<span class="comment">// Double can store fractional numbers, is great for storing numbers to the 15th decimal point</span>
-<span class="var-type">double</span> <span class="variable">score</span> = <span class="num-let">183.38473883734292</span>;
-<span class="comment">// Boolean stores a true or false value</span>
-<span class="var-type">boolean</span> <span class="variable">alive</span> = <span class="var-type">false</span>;
-<span class="comment">// Char stores a single character/letter or ASCII values</span>
-<span class="var-type">char</span> <span class="variable">myLetter</span> = <span class="num-let">"L"</span>;</code>
-</pre>
+                <pre><code class="code black-code"></code></pre>
             </div>
             <p class="page-text" style="position: relative; top: -1px; padding-top: 2vw;">
                 The <strong>Non-primitive</strong> variable types are string, array and classes. I don't learn these till a later chapter so I have nothing to show for them.
@@ -196,79 +188,29 @@
         <!-- Week 3 #6 -->
         <div class="page">
             <h1 class="page-title grade-10"></h1>
-            <p class="page-text" tyle="padding-bottom: 2vw;">
+            <p class="page-text">
                 This week I learned about the way to change the direction of an <strong>Imperative</strong> programming language. Also known as flow controll. The first of many ways to change the flow of an <strong>Imperative</strong> program is with an if/else statement. The if part of the if/else statement always comes first, and will have some conditions it has to follow to run.
             </p>
-            <div class="code-snippet" style="position: relative; top: -10vw; margin-bottom: -10.1vw;">
-<pre>
-<code><span class="comment">/* This the if statement, everything in the () is the conditions to make this if statement work.
-There can be more than one condition, just add && to say and, or || to say or. */</span>
-<span class="magenta">if (</span><span class="variable">i</span> == <span class="num-let">5</span><span class="magenta">) {</span>
-    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="num-let">"Hello world"</span><span class="magenta">)</span>;
-<span class="magenta">}</span>
-
-<span class="comment">// This is an if statemnt with more than one condition</span>
-<span class="magenta">if (</span><span class="variable">x</span> == <span class="num-let">22</span> && <span class="variable">y</span> == <span class="num-let">10</span> || <span class="variable">v</span> == <span class="num-let">3</span><span class="magenta">) {</span>
-    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="num-let">"Goodbye earth"</span><span class="magenta">)</span>;
-<span class="magenta">}</span></code>
-</pre>
+            <div class="code-snippet">
+                <pre><code class="code black-code"></code></pre>
             </div>
             <p class="page-text" style="padding-top: 1vw; padding-bottom: 2vw;">
                 Now there is also the else part which you do not need, but can be added on for another route for the code. Like if you had a double variable called num get a random number between 1 and 10, and a if/else statement that says <span class="snippet-code">if (num <= 5)</span> say "little numbers", else say "big numbers". You can also add an if behind an else for more descrition. Like <span class="snippet-code">else if (num == 10)</span> say "huge number".
             </p>
-            <div class="code-snippet" style="margin-bottom: -1px;">
-<pre>
-<code><span class="comment">/* This is a demonstration of an if/else statement
-It also has an else if as well */</span>
-
-<span class="comment">// This is the variable, it is a random number</span>
-<span class="var-type">double</span> <span class="variable">num</span> = <span class="lime-green">Math</span>.floor<span class="magenta">(</span><span class="lime-green">Math</span>.<span class="mellow-yellow">random</span><span class="var-type">()</span> * <span class="var-type">(</span><span class="num-let">10</span> - <span class="num-let">1</span> + <span class="num-let">1</span><span class="var-type">)</span> + <span class="num-let">1</span><span class="magenta">)</span>;
-
-<span class="comment">// This will run if its condition is met</span>
-<span class="magenta">if (</span><span class="variable">num</span> <= <span class="num-let">5</span><span class="magenta">) {</span>
-    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="num-let">"little numbers"</span><span class="magenta">)</span>;
-<span class="magenta">}</span>
-<span class="comment">// This will run if its condition is met and the code above did not run</span>
-<span class="magenta">else if (</span><span class="variable">num</span> == <span class="num-let">10</span><span class="magenta">) {</span>
-    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="num-let">"huge number"</span><span class="magenta">)</span>;
-<span class="magenta">}</span>
-<span class="comment">// This will run if the code above it does not run</span>
-<span class="magenta">else {</span>
-    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="num-let">"big numbers"</span><span class="magenta">)</span>;
-<span class="magenta">}</span></code>
-</pre>
+            <div class="code-snippet">
+                <pre><code class="code black-code"></code></pre>
             </div>
             <p class="page-text" style="padding-top: 1vw; padding-bottom: 2vw;">
                 Another thing I learned was switch statements. These are pretty cool little things that help out when programming a <em>Java</em> file. You could have it say <span class="snippet-code">if (up), go_down(),</span> which can also be written as <span class="snippet-code">direction == up, go_down(),</span> and you can add as many of these as you need.
             </p>
-            <div class="code-snippet" style="margin-bottom: -1px;">
-<pre><code><span class="comment">// Format them with a comma at the end</span>
-<span class="magenta">if</span> <span class="var-type">(</span>up<span class="var-type">)</span>, <span class="mellow-yellow">go_down</span>(),
-<span class="magenta">if</span> <span class="var-type">(</span>down<span class="var-type">)</span>, <span class="mellow-yellow">go_up</span>();
-
-<span class="comment">// It can also be written this way</span>
-<span class="var-type">direction</span> == up, <span class="mellow-yellow">go_down</span><span class="var-type">()</span>,
-<span class="var-type">direction</span> == down, <span class="mellow-yellow">go_up</span><span class="var-type">()</span>,</code>
-</pre>
+            <div class="code-snippet">
+                <pre><code class="code black-code"></code></pre>
             </div>
             <p class="page-text" style="padding-top: 1vw; padding-bottom: 2vw;">
                 The last thing I learned is loops! There is for loops and while loops which both run of a variable and repeat there code a certain amount of times. A for loop has a variable inside of it that if this varible is does not meet the condition will change by either adding or losing numbers until it meets the condition while also running the code in itself.
             </p>
-            <div class="code-snippet" style="margin-bottom: -1px;">
-<pre><code><span class="comment">// This for loop will run and print what number it's on till it reaches 10</span>
-<span class="magenta">for (</span><span class="lime-green">var</span> <span class="variable">i</span> = <span class="num-let">0</span>; <span class="variable">i</span> <= <span class="num-let">10</span>; <span class="variable">i</span>++<span class="magenta">) {</span>
-    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="variable">i</span><span class="magenta">)</span>;
-<span class="magenta">}</span>
-
-<span class="comment">/* This while loop will run and print what number it's on till it reaches 0
-This variable is its number */</span>
-<span class="var-type">byte</span> <span class="variable">x</span> = <span class="num-let">10</span>;
-
-<span class="magenta">while</span> <span class="var-type">(</span><span class="variable">x</span> >= <span class="num-let">0</span><span class="var-type">) {</span>
-    <span class="lime-green">System</span>.<span class="variable">out</span>.<span class="mellow-yellow">println</span><span class="magenta">(</span><span class="variable">x</span><span class="magenta">)</span>;
-    <span class="variable">x</span>--;
-<span class="var-type">}</span></code>
-</pre>
+            <div class="code-snippet">
+                <pre><code class="code black-code"></code></pre>
             </div>
             <p class="page-text" style="padding-top: 1vw">Now a while loop is very simular to a for loop with a few key diffences. First off it does not have the variable inside it, the variable it has is outside of the loop entirely. Secondly when it changes the value of it's variable it can be anywhere inside the loop. Which is gonna be very helpful in the future.</p>
             <div class="extra-resources" style="margin-bottom: -1px;">
@@ -289,6 +231,15 @@ This variable is its number */</span>
                 <a href="https://www.javatpoint.com/java-for-loop" target="_blank">Java Point</a>
                 <a href="https://techvidvan.com/tutorials/java-loops/" target="_blank">TechVidVan</a>
             </div>
+        </div>
+
+        <!-- Week 4 #7 -->
+        <div class="page">
+            <h1 class="page-title grade-10"></h1>
+            <p class="page-text">
+                This week I learned about arrays, and how they work in <em>Java</em>. An array is a data type that can hold lots of data. It can be any type of data type, int, string, boolean, ect. It can only be that one data type though, you can hava an array that has both numbers and text in it, or text and booleans.
+            </p>
+
         </div>
 
         <script src="app.js"></script>
