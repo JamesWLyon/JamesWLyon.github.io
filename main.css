@@ -13,11 +13,11 @@ body {
     user-select: none;
     -webkit-user-select: none;
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom right, rgb(53, 64, 90), rgb(4, 33, 37));
+    background-color: #EEE;
 }
 
 /* Styles any screen this size */
-@media only screen and (min-width: 767px)  {
+@media screen and (min-width: 767px)  {
     
     /* Styles the nav button for mobile */
     #nav-mobil-btn {
@@ -379,23 +379,27 @@ body {
     }
 
     /* Colors the variables in the code snippets */
-    pre .variable {
+    pre .light-sky-blue {
         color: lightskyblue;
     }
 
     /* Colors the variables types in the code snippets */
-    pre .var-type {
+    pre .blue-1 {
         color: rgb(36, 171, 255);
     }
 
     /* Colors the numbers and letters in the code snippets */
-    pre .num-let {
+    pre .light-green {
         color: rgb(154, 241, 158);
     }
 
     /* Colors the code magenta */
     pre .magenta {
-        color: rgb(211, 18, 211);
+        color: rgb(225, 0, 255);
+    }
+
+    pre .light-magenta {
+        color: rgb(255, 45, 237);
     }
 
     /* Colors the code lime-green */
@@ -413,5 +417,35 @@ body {
         color: #f36d33;
         font-family: 'Lucida Grande', monospace;
         background-color: #f4f4f4;
+    }
+
+    /* This styles the text on the credit's page */
+    .credits {
+        display: flex;
+        width: 76vw;
+        padding: 12vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font: 5vw 'Amiko';
+        overflow: hidden;
+        margin-bottom: -1px;
+        background-color: #EEE;
+    }
+
+    .credits span {width: 100%;}
+
+    .credits a {color: blue;text-decoration: none;}
+
+    .credits .left {
+        text-align: left;
+        padding-bottom: 1vw;
+        padding-top: 1vw;
+        border-top: .1em solid black;
+        color: black;
+    }
+
+    .credits .right {
+        text-align: right;
+        padding-bottom: 1vw;
     }
 }
