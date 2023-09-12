@@ -96,7 +96,7 @@ for (var i = 0; i < page.length; i++) {
 page[index].style.display = "block";
 window.scroll(0, 0);   
 }
-ChangePage(7);
+ChangePage(0);
 
 //}
 
