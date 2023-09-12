@@ -96,7 +96,7 @@ for (var i = 0; i < page.length; i++) {
 page[index].style.display = "block";
 window.scroll(0, 0);   
 }
-ChangePage(0);
+ChangePage(7);
 
 //}
 
@@ -124,9 +124,11 @@ function WriteCodeSnips () {
     var snips = [
         '😀// Byte can store whole numbers between -128 and 127😀\n😇byte😇 😄myAge😄 = 😝16😝;\n😀// Short can store whole numbers between -32768 and 32767😀\n😇Short😇 😄shoeSize😄 = 😝-23754😝;\n😀// Int can store whole numbers between -2147483648 and 2147483647😀\n😇int😇 😄amountPeople😄 = 😝93564789😝;\n😀// Long can store whole numbers between -9223372036854775808 and 9223372036854775807😀\n😇long😇 😄money😄 = 😝8374736746344393😝;\n😀// Float can store fractional numbers, is great for storing numbers to the 6th or 7th decimal point😀\n😇float😇 😄timer😄 = 😝5.637348😝;\n😀// Double can store fractional numbers, is great for storing numbers to the 15th decimal point😀\n😇double😇 😄score😄 = 😝183.38473883734292😝;\n😀// Boolean stores a true or false value😀\n😇boolean😇 😄alive😄 = 😇false😇;\n😀// Char stores a single character/letter or ASCII values😀\n😇char😇 😄myLetter😄 = 😝"L"😝;',
         '😀/* This is the if statement, everything in the () is the conditions to make this if statement work.\nThere can be more than one condition, just add && to say and, or || to say or. */😀\n🥰if🥰 🥹(🥹😄i😄 == 😝5😝🥹) {🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹😝"Hello world"😝🥹)🥹;\n🥹}🥹\n\n😀// This is an if statemnt with more than one condition😀\n🥰if🥰 🥹(🥹😄x😄 == 😝22😝 && 😄y😄 == 😝10😝 || 😄v😄 == 😝3😝🥹) {🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹😝"Goodbye earth"😝🥹)🥹;\n🥹}🥹',
-        '😀/* This is a demonstration of an if/else statement\nIt also has an else if as well */😀\n\n😀// This is the variable, it is a random number😀\n😇double😇 😄num😄 = 😊Math😊.floor(😊Math😊.😗random😗😄()😄 * 😄(😄😝10😝 - 😝1😝 + 😝1😝😄)😄 + 😝1😝);\n\n😀// This will run if its condition is met😀\n🥰if🥰 🥹(🥹😄num😄 <= 😝5😝🥹) {🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹"little numbers"🥹)🥹;\n🥹}🥹\n😀// This will run if its condition is met and the code above did not run😀\n🥰else if🥰 🥹(🥹😄num😄 == 😝10😝🥹) {🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹"huge number"🥹)🥹;\n🥹}🥹\n😀// This will run if the code above it does not run😀\n\n🥰else🥰 🥹{🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹"big numbers"🥹)🥹;\n🥹}🥹',
+        '😀/* This is a demonstration of an if/else statement\nIt also has an else if as well */😀\n\n😀// This is the variable, it is a random number😀\n😇double😇 😄num😄 = 😊Math😊.floor🥹(🥹😊Math😊.😗random😗😄()😄 * 😄(😄😝10😝 - 😝1😝 + 😝1😝😄)😄 + 😝1😝🥹)🥹;\n\n😀// This will run if its condition is met😀\n🥰if🥰 🥹(🥹😄num😄 <= 😝5😝🥹) {🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹"little numbers"🥹)🥹;\n🥹}🥹\n😀// This will run if its condition is met and the code above did not run😀\n🥰else if🥰 🥹(🥹😄num😄 == 😝10😝🥹) {🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹"huge number"🥹)🥹;\n🥹}🥹\n😀// This will run if the code above it does not run😀\n\n🥰else🥰 🥹{🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹"big numbers"🥹)🥹;\n🥹}🥹',
         '😀// Format them with a comma at the end😀\n😄if😄 😇(😇up😇)😇, 😗go_down😗😇()😇,\n😄if😄 😇(😇down😇)😇, 😗go_up😗😇()😇,\n\n😀// It can also be written this way😀\n😇direction😇 == up, 😗go_down😗😇()😇,\n😇direction😇 == down, 😗go_up😗😇()😇,',
         '😀// This for loop will run and print what number it~s on till it reaches 10😀\n🥰for🥰 🥹(🥹😇var😇 😄i😄 = 😝0😝; 😄i😄 <= 😝10😝; 😄i😄++🥹) {🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹😄i😄🥹)🥹;\n🥹}🥹\n\n😀/* This while loop will run and print what number it~s on till it reaches 0\nThis variable is its number */😀\n😇byte😇 😄x😄 = 😝10😝;\n\n🥰while🥰 🥹(🥹😄x😄 >= 😝0😝🥹) {🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹😄x😄🥹)🥹;\n🤩😄x😄--;\n🥹}🥹',
+        '😊int😊😇[]😇 😄myArray😄 = 🥰new🥰 😊int😊😇[😇😝10😝😇]😇;',
+        '😊Sting😊😇[]😇 😄words😄 = 😇{\n😇🤩😀// This is the first thing in the array so it~s number is 0😀\n🤩😝"hi"😝,\n🤩😀// This is the second thing in the array so it~s number is 1😀\n🤩😝"hello"😝,\n🤩😀// This is the third thing in the array so it~s number is 2😀\n🤩😝"goodbye"😝\n};',
         '',
     ];
     var snip = document.getElementsByClassName("code");
@@ -140,7 +142,9 @@ function WriteCodeSnips () {
 function CleanseText (Text) {
 
     Text = Text.replace(/</g, "&lt");
+    // For tab
     Text = Text.replace(/🤩/g, "    ");
+    // For '
     Text = Text.replace(/~/g, "'");
     // 😀 = comment
     Text = Text.replace(/\😀([^\😀]+)\😀/g, "<span class='comment'>$1</span>");
