@@ -194,7 +194,7 @@ body {
         background-attachment: fixed;
     }
 
-    .page-title span {
+    .page-title .wrapper {
         display: block;
         width: 100%;
         padding-top: 24vw;
@@ -473,6 +473,47 @@ body {
     .resources a {
         display: block;
         color: #EEE;
+        font: 5vw 'Comfortaa';
         margin-bottom: 4vw;
+    }
+
+    /* Typing effect */
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .page-title .container p {
+        font-size: 3rem;
+        padding: 0.5rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .page-title .container span.cursor {
+        position: relative;
+        display: inline-block;
+        background-color: white;
+        margin-left: 0.09rem;
+        width: 3px;
+        height: 10vw;
+        top: 2.5vw;
+        animation: blink 1s infinite;
+    }
+
+    .page-title .container span.cursor.typing {
+        animation: none;
+    }
+
+    @keyframes blink {
+        0%  { background-color: white; }
+        49% { background-color: white; }
+        50% { background-color: transparent; }
+        99% { background-color: transparent; }
+        100%  { background-color: white; }
     }
 }
