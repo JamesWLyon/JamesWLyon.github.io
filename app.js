@@ -17,7 +17,7 @@ document.getElementsByClassName("nav-wrap")[0].style.height = w + "px";
 for (var i = 0; i < grade10.length; i++) {
     grade10[i].style.backgroundImage = "url(https://i.imgur.com/WWQUhKl.png)";
     grade10[i].style.backgroundSize = "120vw";
-    grade10[i].innerHTML = "<span>Week " + (i + 1) + "</span>";
+    grade10[i].innerHTML = "<span class='wrapper'>Week " + (i + 1) + "</span>";
 }
 }
 
@@ -96,7 +96,7 @@ for (var i = 0; i < page.length; i++) {
 page[index].style.display = "block";
 window.scroll(0, 0);   
 }
-ChangePage(2);
+ChangePage(0);
 
 //}
 
@@ -129,7 +129,6 @@ function WriteCodeSnips () {
         '😀// This for loop will run and print what number it~s on till it reaches 10😀\n🥰for🥰 🥹(🥹😇var😇 😄i😄 = 😝0😝; 😄i😄 <= 😝10😝; 😄i😄++🥹) {🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹😄i😄🥹)🥹;\n🥹}🥹\n\n😀/* This while loop will run and print what number it~s on till it reaches 0\nThis variable is its number */😀\n😇byte😇 😄x😄 = 😝10😝;\n\n🥰while🥰 🥹(🥹😄x😄 >= 😝0😝🥹) {🥹\n🤩😊System😊.😄out😄.😗println😗🥹(🥹😄x😄🥹)🥹;\n🤩😄x😄--;\n🥹}🥹',
         '😊int😊😇[]😇 😄myArray😄 = 🥰new🥰 😊int😊😇[😇😝10😝😇]😇;',
         '😊Sting😊😇[]😇 😄words😄 = 😇{\n😇🤩😀// This is the first thing in the array so it~s number is 0😀\n🤩😝"hi"😝,\n🤩😀// This is the second thing in the array so it~s number is 1😀\n🤩😝"hello"😝,\n🤩😀// This is the third thing in the array so it~s number is 2😀\n🤩😝"goodbye"😝\n};',
-        '',
     ];
     var snip = document.getElementsByClassName("code");
 
@@ -171,5 +170,45 @@ WriteCodeSnips();
 //}
 
 // The typewriter effect {
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
 
+const textArray = ["Journey", "Adventure", "Expidition", "Voyage"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+    } 
+    else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+    } 
+    else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+    if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
 //}
