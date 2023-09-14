@@ -25,7 +25,7 @@ function WebsiteLoad (w) {
 
 // Checks if user is on a mobile device {
 
-function isMobile() {
+function IsMobile() {
 
     mobileCheck = false;
 
