@@ -448,4 +448,31 @@ body {
         text-align: right;
         padding-bottom: 1vw;
     }
+
+    .resources {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        font: 4.5vw 'Arial';
+    }
+
+    .resources .item {
+        width: 65%;
+        height: auto;
+        padding: 8%;
+        margin-bottom: 8vw;
+        border-radius: 3vw;
+        color: #EEE;
+        background-color: rgb(27, 27, 27);
+    }
+
+    .resources a {
+        display: block;
+        color: #EEE;
+        margin-bottom: 4vw;
+    }
 }
