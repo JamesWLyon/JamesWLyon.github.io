@@ -2,7 +2,7 @@
  
     Hello this is my Week 7 Objects Part 1 assignment,
 
-    Last week I did not fully understand whatan object in java was.
+    Last week I did not fully understand what an object in java was.
     Thanks to Mr. Gross's explaination and some more reading I
     finally understood what an object is and how to create and use
     one. So I made this. This program creates objects that are humans.
