@@ -1,3 +1,14 @@
+/**
+ 
+    Hello, this is my Week 4 String manipulation,
+
+    A helpful YouTube video that helped me understand this sorta thing better
+    was https://www.youtube.com/watch?v=q9xpEEZwloE by  Career & Tech HQ
+
+    Made by: James Lyon
+
+**/
+
 import java.util.Scanner;
 
 public class WordBreaker {
