@@ -1,3 +1,10 @@
+/*
+
+    My name is James Lyon, and this is my week 6 assignment Delimiters.
+ 
+*/
+
+
 import java.io.*;
 import java.util.*;
 
