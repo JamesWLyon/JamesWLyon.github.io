@@ -1,3 +1,11 @@
+/**
+ 
+    Hello this is my Week 8 Linked list assignment,
+
+    Made by: James Lyon
+ 
+ **/
+
 import java.util.Scanner;
 
 // Define a class to represent each element in the linked list
