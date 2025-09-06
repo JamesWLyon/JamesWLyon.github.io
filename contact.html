@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>James Lyon: Contact Me</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="nav-menu">
+            <a href="./index.html" class="menu-button">Main</a>
+            <a href="./about.html" class="menu-button">About</a>
+            <a href="./contact.html" class="menu-button">Contact</a>
+        </div>
+
+        <div class="block-wrapper">
+            <div class="inner-wrapper">
+
+            </div>
+            <div>
+                <!-- Contact Form -->
+                <form action="https://formspree.io/f/xyzdbqnb" method="POST">
+                    <div class="inner-form-box">
+                        <!-- Company Email -->
+                        <label for="company-email">Company Email</label>
+                        <input type="email" id="company-email" name="company_email" value="" required>
+                    </div>
+                    <div class="inner-form-box">
+                        <!-- Email Subject -->
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" value="" required>
+                    </div>
+                    <div class="inner-form-box">
+                        <!-- Email Body -->
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" value="" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                © <span class="copyright-date"></span> James Lyon
+                •
+                <a href="mailto:lyonjamesw@gmail.com?subject=Portfolio%20Inquiry" target="_blank">lyonjamesw@gmail.com</a>
+            </p>
+        </footer>
+
+        <script src="copyright_date.js"></script>
+    </body>
+</html>
