@@ -155,12 +155,12 @@ footer a {
     object-fit: cover;
 }
 
-#projects-btn {
+.filler-text a {
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-#projects-btn:hover {
+.filler-text a:hover {
     color: #1F5FCC;
 }
 
