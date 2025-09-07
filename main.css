@@ -1,5 +1,4 @@
 /*
-
 Layout Style
 
 Layout & Positioning – display, position, flex, justify-content, align-items, gap, width, height, padding, margin
@@ -11,22 +10,19 @@ Visual Style – background-color, border-radius, box-shadow, object-fit
 Transformations & Transitions – transition, transform, perspective, transform-style
 
 Other – anything else (cursor, overflow, etc.)
-
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     width: 100%;
-    height: 100%;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1.3rem;
     line-height: 1.5;
     color: #292929;
     cursor: default;
@@ -34,7 +30,7 @@ body {
 
 footer {
     width: 100%;
-    padding: 0.5% 0%;
+    padding: 0.5% 0;
     text-align: center;
     color: #686868;
     background-color: #262626;
@@ -57,8 +53,8 @@ footer a {
 .menu-button {
     text-align: center;
     text-decoration: none;
-    padding: 0.5rem;
-    font-size: 1.3rem;
+    padding: 0.8rem;
+    font-size: 1.6rem;
     color: #686868;
     transition: linear 0.2s;
 }
@@ -73,7 +69,7 @@ footer a {
     justify-content: center;
     gap: 8rem;
     padding: 4rem;
-    height: 30vh;
+    height: auto;
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     line-height: 4rem;
@@ -82,8 +78,8 @@ footer a {
 }
 
 .page-title img {
-    max-height: 80%;
-    max-width: 70%;
+    max-height: 300px;
+    width: auto;
     object-fit: contain;
 }
 
@@ -94,73 +90,242 @@ footer a {
 
 .tilt-container img {
     display: block;
-    width: 320px;
+    max-width: 100%;
     height: auto;
     border-radius: 2px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.25);
     transform-style: preserve-3d;
     transition: transform 0.3s ease;
+    transform: rotateX(0deg) rotateY(0deg);
 }
 
 .filler-text {
     padding: 3rem 0 2rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     letter-spacing: 2px;
     color: #262626;
 }
 
 .block-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8vw;
-    height: auto;
-    padding: 1rem;
-    color: #262626;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    gap: 2rem;
 }
 
-.block-wrapper p {
-    width: 80%;
-    padding: 3rem 0;
-    line-height: 3rem;
-    font-size: 1.5rem;
-    text-align: left;
+.block-wrapper .inner-text {
+    font-size: 1.45rem;
+    width: 85%;
+    padding: 1rem 0 0.3rem;
+    line-height: 2.6rem;
 }
 
 .project-block {
     display: flex;
-    position: relative;
     flex-direction: row;
     align-items: flex-start;
-    height: 80%;
-    width: 20%;
+    position: relative;
+    width: 300px;
+    height: 400px;
     overflow: hidden;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .vertical-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-right: 2%;
-    font-size: 1.8rem;
+    padding-right: 5px;
+    font-size: 2rem;
     line-height: 100%;
     text-transform: uppercase;
     text-align: center;
     color: #262626;
+    background-color: transparent;
     transition: transform 0.3s ease-in-out;
 }
 
 .project-block img {
-    display: block;
+    width: 100%;
     height: 100%;
-    width: auto;
-    min-width: 200px;
     object-fit: cover;
 }
 
-.inner-form-box {
-    display: flex;
-    flex-direction: column;
+#projects-btn {
+    color: #3A82F7;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#projects-btn:hover {
+    color: #1F5FCC;
+}
+
+/* Mobile / Responsive Styles */
+
+/* Large phones / modern high-res devices (e.g., iPhone 15 Pro Max) */
+@media screen and (max-width: 1500px) and (orientation: portrait) {
+    .block-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .page-title {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        font-size: 2rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .project-block {
+        width: 75%;
+        max-width: 350px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .project-block img {
+        height: auto;
+    }
+
+    .vertical-text {
+        font-size: 1.8rem;
+    }
+
+    .filler-text {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    #projects-btn {
+        font-size: 1.4rem;
+    }
+
+    .menu-button {
+        font-size: 1.55rem;
+        padding: 0.8rem;
+    }
+
+    .cta-button {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 1.15rem;
+    }
+}
+
+/* Tablets & medium phones */
+@media screen and (max-width: 1024px) {
+    .block-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .page-title {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        font-size: 1.9rem;
+        line-height: 2.8rem;
+        text-align: center;
+    }
+
+    .project-block {
+        width: 70%;
+        max-width: 300px;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .vertical-text {
+        font-size: 1.6rem;
+    }
+
+    .filler-text {
+        font-size: 1.25rem;
+    }
+
+    #projects-btn {
+        font-size: 1.35rem;
+    }
+
+    .menu-button {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    .cta-button {
+        font-size: 1.35rem;
+        padding: 1rem 2rem;
+    }
+
+    body {
+        font-size: 1.15rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small phones / portrait orientation */
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    .block-wrapper {
+        gap: 1.5rem;
+    }
+
+    .project-block {
+        width: 85%;
+        max-width: 250px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .page-title {
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .vertical-text {
+        font-size: 1.4rem;
+    }
+
+    .filler-text {
+        font-size: 1.1rem;
+    }
+
+    #projects-btn {
+        font-size: 1.25rem;
+    }
+
+    .menu-button {
+        font-size: 1.3rem;
+        padding: 0.7rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
 }

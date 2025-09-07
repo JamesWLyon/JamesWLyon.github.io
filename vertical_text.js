@@ -1,5 +1,5 @@
 const projectBlocks = document.querySelectorAll(".project-block");
-const words = ["Create", "Design", "Program"];
+const words = ["Creative", "Fresh", "Refined"];
 
 projectBlocks.forEach((block, i) => {
     const verticalText = block.querySelector(".vertical-text");

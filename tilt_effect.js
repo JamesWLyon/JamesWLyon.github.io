@@ -2,25 +2,31 @@ const container = document.querySelector('.tilt-container');
 const image = container.querySelector('img');
 const tiltEffect = 14;
 
-container.addEventListener('mousemove', (e) => {
-    // Get position of mouse relative to the container
-    const rect = container.getBoundingClientRect();
-    const x = e.clientX - rect.left; // x position within container
-    const y = e.clientY - rect.top;  // y position within container
+let isHovering = false;
 
-    // Calculate center
+container.addEventListener('mouseenter', () => {
+    isHovering = true;
+});
+
+container.addEventListener('mousemove', (e) => {
+    if (!isHovering) return;
+
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    // Calculate rotation values, max 15 degrees tilt
-    const rotateX = ((y - centerY) / centerY) * -tiltEffect; // invert rotation for natural feel
+    const rotateX = ((y - centerY) / centerY) * -tiltEffect;
     const rotateY = ((x - centerX) / centerX) * tiltEffect;
 
-    // Apply transform
-    image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    window.requestAnimationFrame(() => {
+        image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
 });
 
 container.addEventListener('mouseleave', () => {
-    // Reset transform when mouse leaves container
+    isHovering = false;
     image.style.transform = 'rotateX(0deg) rotateY(0deg)';
 });

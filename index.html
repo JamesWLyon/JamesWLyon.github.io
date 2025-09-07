@@ -1,56 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>James Lyon: Front End Developer</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <div id="nav-menu">
-            <a href="./index.html" class="menu-button">Main</a>
-            <a href="./about.html" class="menu-button">About</a>
-            <a href="./contact.html" class="menu-button">Contact</a>
+<html lang="en">
+<head>
+    <title>James Lyon: Front End Developer</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav id="nav-menu" aria-label="Main navigation">
+        <a href="./index.html" class="menu-button">Main</a>
+        <a href="./about.html" class="menu-button">About</a>
+        <a href="./contact.html" class="menu-button">Contact</a>
+    </nav>
+
+    <header class="page-title">
+        <h2>Hi, I'm James Lyon.<br>A front-end developer.</h2>
+        <div class="tilt-container">
+            <img src="https://ik.imagekit.io/ydrtyh0dc/My%20Portfolio/ProfilePicture.jpg?updatedAt=1757271507769" alt="Profile Image">
         </div>
-        <div class="page-title">
-            <h2>Hi, I'm James Lyon.<br>A front-end developer.</h2>
-            <div class="tilt-container">
-                <img src="https://ik.imagekit.io/ydrtyh0dc/My%20Portfolio/ProfilePicture.jpg?updatedAt=1749104449369" alt="Image Not Displaying">
-            </div>
+    </header>
+
+    <p class="filler-text">
+        I am a guy who loves to code beautiful and responsive 
+        <a id="projects-btn" href="./projects.html">Websites</a>
+    </p>
+
+    <section class="block-wrapper">
+        <div class="project-block">
+            <div class="vertical-text">Project 1</div>
+            <img src="https://ik.imagekit.io/ydrtyh0dc/My%20Portfolio/ProfilePicture.jpg?updatedAt=1757271507769" alt="Project Image">
         </div>
-
-
-        <p class="filler-text">I am a guy who loves to</p>
-        <div class="block-wrapper">
-            <div class="project-block">
-                <div class="vertical-text"></div>
-                <img src="https://ik.imagekit.io/ydrtyh0dc/My%20Portfolio/ProfilePicture.jpg?updatedAt=1749104449369" alt="Image Not Displaying">
-            </div>
-            <div class="project-block">
-                <div class="vertical-text"></div>
-                <img src="https://ik.imagekit.io/ydrtyh0dc/My%20Portfolio/ProfilePicture.jpg?updatedAt=1749104449369" alt="Image Not Displaying">
-            </div>
-            <div class="project-block">
-                <div class="vertical-text"></div>
-                <img src="https://ik.imagekit.io/ydrtyh0dc/My%20Portfolio/ProfilePicture.jpg?updatedAt=1749104449369" alt="Image Not Displaying">
-            </div>
+        <div class="project-block">
+            <div class="vertical-text">Project 2</div>
+            <img src="https://ik.imagekit.io/ydrtyh0dc/My%20Portfolio/ProfilePicture.jpg?updatedAt=1757271507769" alt="Project Image">
         </div>
-        <a href="./projects.html" style="color: red;">Projects</a>
+        <div class="project-block">
+            <div class="vertical-text">Project 3</div>
+            <img src="https://ik.imagekit.io/ydrtyh0dc/My%20Portfolio/TeamOkapacki.png" alt="Project Image">
+        </div>
+    </section>
 
+    <footer>
+        <p>
+            © <span class="copyright-date"></span> James Lyon •
+            <a href="mailto:lyonjamesw@gmail.com?subject=Portfolio%20Inquiry" target="_blank">lyonjamesw@gmail.com</a>
+        </p>
+    </footer>
 
-        <footer>
-            <p>
-                © <span class="copyright-date"></span> James Lyon
-                •
-                <a href="mailto:lyonjamesw@gmail.com?subject=Portfolio%20Inquiry" target="_blank">lyonjamesw@gmail.com</a>
-            </p>
-        </footer>
-
-        
-        <!--
-        
-        -->
-        <script src="tilt_effect.js"></script>
-        <script src="vertical_text.js"></script>
-        <script src="copyright_date.js"></script>
-    </body>
+    <script src="tilt_effect.js"></script>
+    <script src="vertical_text.js"></script>
+    <script src="copyright_date.js"></script>
+</body>
 </html>
