@@ -156,7 +156,6 @@ footer a {
 }
 
 #projects-btn {
-    color: #3A82F7;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -164,8 +163,6 @@ footer a {
 #projects-btn:hover {
     color: #1F5FCC;
 }
-
-/* Mobile / Responsive Styles */
 
 /* Large phones / modern high-res devices (e.g., iPhone 15 Pro Max) */
 @media screen and (max-width: 1500px) and (orientation: portrait) {
@@ -186,18 +183,25 @@ footer a {
     }
 
     .project-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         width: 75%;
         max-width: 350px;
         height: auto;
-        flex-direction: column;
     }
 
     .project-block img {
+        width: 70%;
         height: auto;
     }
 
     .vertical-text {
+        width: 30%;
         font-size: 1.8rem;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        margin-right: 0.5rem;
     }
 
     .filler-text {
@@ -247,14 +251,25 @@ footer a {
     }
 
     .project-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         width: 70%;
         max-width: 300px;
         height: auto;
-        flex-direction: row;
+    }
+
+    .project-block img {
+        width: 70%;
+        height: auto;
     }
 
     .vertical-text {
+        width: 30%;
         font-size: 1.6rem;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        margin-right: 0.5rem;
     }
 
     .filler-text {
@@ -291,20 +306,31 @@ footer a {
     }
 
     .project-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         width: 85%;
         max-width: 250px;
         height: auto;
-        flex-direction: column;
+    }
+
+    .project-block img {
+        width: 70%;
+        height: auto;
+    }
+
+    .vertical-text {
+        width: 30%;
+        font-size: 1.4rem;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        margin-right: 0.5rem;
     }
 
     .page-title {
         padding: 1.5rem;
         font-size: 1.6rem;
         line-height: 2.2rem;
-    }
-
-    .vertical-text {
-        font-size: 1.4rem;
     }
 
     .filler-text {
