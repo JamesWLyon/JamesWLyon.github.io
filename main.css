@@ -147,6 +147,8 @@ footer a {
     color: #262626;
     background-color: transparent;
     transition: transform 0.3s ease-in-out;
+    writing-mode: vertical-rl; /* vertical text on desktop */
+    text-orientation: mixed;
 }
 
 .project-block img {
@@ -164,7 +166,11 @@ footer a {
     color: #1F5FCC;
 }
 
-/* Large phones / modern high-res devices (e.g., iPhone 15 Pro Max) */
+/* ===========================
+   Responsive / Mobile Styles
+   =========================== */
+
+/* Large phones / high-res devices (iPhone 15 Pro Max, 13, etc.) */
 @media screen and (max-width: 1500px) and (orientation: portrait) {
     .block-wrapper {
         flex-direction: column;
@@ -183,7 +189,6 @@ footer a {
     }
 
     .project-block {
-        display: flex;
         flex-direction: row;
         align-items: center;
         width: 75%;
@@ -199,8 +204,8 @@ footer a {
     .vertical-text {
         width: 30%;
         font-size: 1.8rem;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
+        writing-mode: horizontal-tb; /* horizontal text on mobile */
+        text-orientation: initial;
         margin-right: 0.5rem;
     }
 
@@ -251,7 +256,6 @@ footer a {
     }
 
     .project-block {
-        display: flex;
         flex-direction: row;
         align-items: center;
         width: 70%;
@@ -267,8 +271,8 @@ footer a {
     .vertical-text {
         width: 30%;
         font-size: 1.6rem;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
         margin-right: 0.5rem;
     }
 
@@ -306,7 +310,6 @@ footer a {
     }
 
     .project-block {
-        display: flex;
         flex-direction: row;
         align-items: center;
         width: 85%;
@@ -322,8 +325,8 @@ footer a {
     .vertical-text {
         width: 30%;
         font-size: 1.4rem;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
+        writing-mode: horizontal-tb; /* horizontal text on small phones */
+        text-orientation: initial;
         margin-right: 0.5rem;
     }
 
