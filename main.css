@@ -147,8 +147,6 @@ footer a {
     color: #262626;
     background-color: transparent;
     transition: transform 0.3s ease-in-out;
-    writing-mode: vertical-rl; /* vertical text on desktop */
-    text-orientation: mixed;
 }
 
 .project-block img {
@@ -166,11 +164,7 @@ footer a {
     color: #1F5FCC;
 }
 
-/* ===========================
-   Responsive / Mobile Styles
-   =========================== */
-
-/* Large phones / high-res devices (iPhone 15 Pro Max, 13, etc.) */
+/* Large phones / modern high-res devices (e.g., iPhone 15 Pro Max) */
 @media screen and (max-width: 1500px) and (orientation: portrait) {
     .block-wrapper {
         flex-direction: column;
@@ -189,6 +183,7 @@ footer a {
     }
 
     .project-block {
+        display: flex;
         flex-direction: row;
         align-items: center;
         width: 75%;
@@ -204,8 +199,7 @@ footer a {
     .vertical-text {
         width: 30%;
         font-size: 1.8rem;
-        writing-mode: horizontal-tb; /* horizontal text on mobile */
-        text-orientation: initial;
+        /* Removed writing-mode and text-orientation */
         margin-right: 0.5rem;
     }
 
@@ -256,6 +250,7 @@ footer a {
     }
 
     .project-block {
+        display: flex;
         flex-direction: row;
         align-items: center;
         width: 70%;
@@ -271,8 +266,7 @@ footer a {
     .vertical-text {
         width: 30%;
         font-size: 1.6rem;
-        writing-mode: horizontal-tb;
-        text-orientation: initial;
+        /* Removed writing-mode and text-orientation */
         margin-right: 0.5rem;
     }
 
@@ -310,6 +304,7 @@ footer a {
     }
 
     .project-block {
+        display: flex;
         flex-direction: row;
         align-items: center;
         width: 85%;
@@ -325,8 +320,7 @@ footer a {
     .vertical-text {
         width: 30%;
         font-size: 1.4rem;
-        writing-mode: horizontal-tb; /* horizontal text on small phones */
-        text-orientation: initial;
+        /* Removed writing-mode and text-orientation */
         margin-right: 0.5rem;
     }
 
@@ -356,5 +350,20 @@ footer a {
 
     body {
         font-size: 1rem;
+    }
+}
+
+/* Mobile alignment fix */
+@media screen and (max-width: 1500px) and (orientation: portrait),
+       screen and (max-width: 1024px),
+       screen and (max-width: 480px) and (orientation: portrait) {
+    
+    .project-block {
+        align-items: flex-start;
+    }
+
+    .vertical-text {
+        margin-right: 0;  /* remove extra space pushing text left */
+        margin-left: 4rem;
     }
 }
