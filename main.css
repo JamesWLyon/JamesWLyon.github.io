@@ -102,7 +102,7 @@ footer a {
 .filler-text {
     padding: 3rem 0 2rem;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     color: #262626;
 }
@@ -132,6 +132,8 @@ footer a {
     height: 400px;
     overflow: hidden;
     cursor: pointer;
+    border-top: 2px solid #262626;
+    border-right: 2px solid #262626;
     background-color: transparent;
 }
 
@@ -140,7 +142,7 @@ footer a {
     flex-direction: column;
     justify-content: flex-start;
     padding-right: 5px;
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 100%;
     text-transform: uppercase;
     text-align: center;
@@ -153,6 +155,7 @@ footer a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-bottom: 2px solid #262626;
 }
 
 .filler-text a {
@@ -198,12 +201,13 @@ footer a {
 
     .vertical-text {
         width: 30%;
-        font-size: 1.8rem;
+        font-size: 2rem;
         /* Removed writing-mode and text-orientation */
         margin-right: 0.5rem;
     }
 
     .filler-text {
+        width: 80%;
         font-size: 1.3rem;
         letter-spacing: 1px;
     }
@@ -265,12 +269,13 @@ footer a {
 
     .vertical-text {
         width: 30%;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         /* Removed writing-mode and text-orientation */
         margin-right: 0.5rem;
     }
 
     .filler-text {
+        width: 80%;
         font-size: 1.25rem;
     }
 
@@ -319,7 +324,7 @@ footer a {
 
     .vertical-text {
         width: 30%;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         /* Removed writing-mode and text-orientation */
         margin-right: 0.5rem;
     }
@@ -331,6 +336,7 @@ footer a {
     }
 
     .filler-text {
+        width: 80%;
         font-size: 1.1rem;
     }
 
@@ -363,7 +369,8 @@ footer a {
     }
 
     .vertical-text {
-        margin-right: 0;  /* remove extra space pushing text left */
+        margin-top: 0;
+        margin-right: 0;
         margin-left: 4rem;
     }
 }
